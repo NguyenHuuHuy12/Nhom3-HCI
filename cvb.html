@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 14px;
+            line-height: 26px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+
+            .full-name {
+                font-size: 40px;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+                justify-content: space-between;
+                display: flex;
+            }
+
+            .first-name {
+                font-weight: 700;
+            }
+
+            .last-name {
+                font-weight: 300;
+            }
+
+            .contact-info {
+                margin-bottom: 20px;
+            }
+
+            .email,
+            .phone {
+                color: #999;
+                font-weight: 300;
+            }
+
+            .separator {
+                height: 10px;
+                display: inline-block;
+                border-left: 2px solid #999;
+                margin: 0px 10px;
+            }
+
+            .position {
+                font-weight: bold;
+                display: inline-block;
+                margin-right: 10px;
+                text-decoration: underline;
+            }
+        }
+
+
+        .details {
+            line-height: 20px;
+
+            .section {
+                margin-bottom: 40px;
+            }
+
+            .section:last-of-type {
+                margin-bottom: 0px;
+            }
+
+            .section__title {
+                letter-spacing: 2px;
+                color: #54AFE4;
+                font-weight: bold;
+                margin-bottom: 10px;
+                text-transform: uppercase;
+            }
+
+            .section__list-item {
+                margin-bottom: 40px;
+            }
+
+            .section__list-item:last-of-type {
+                margin-bottom: 0;
+            }
+
+            .left,
+            .right {
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .left {
+                width: 60%;
+            }
+
+            .right {
+                text-align: right;
+                width: 39%;
+            }
+
+            .name {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-style: italic;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                color: #000;
+            }
+
+            .skills__item {
+                margin-bottom: 10px;
+            }
+
+            .skills__item .right {
+                input {
+                    display: none;
+                }
+
+                label {
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    background: #C3DEF3;
+                    border-radius: 20px;
+                    margin-right: 3px;
+                }
+
+                input:checked+label {
+                    background: #79A9CE;
+                }
+            }
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+
+        .group1 {
+            align-items: flex-end;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+    <div class="container">
+        <div class="header">
+            <div class="full-name">
+                <ul class="group1">
+                    <span class="first-name">Hiển</span>
+                    <span class="last-name">Mai</span>
+                </ul>
+                <ul>
+                    <img src="R.png" alt="doctor">
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">23130099@st.hcmuaf.edu.vn</span>
+                <span class="separator"></span>
+                <span class="phone">Phone number: </span>
+                <span class="phone-val">0708699870</span>
+            </div>
+
+            <div class="about">
+                <span class="position">IT Students </span>
+                <span class="desc">
+                    I am an IT student, I am currently in my 2nd year. My forte is writing about Java and HTML. I'm a
+                    pretty active person, and I have good teamwork skills. Looking forward to having a good job in the
+                    future, and the opportunity to develop further.
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">None</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Ho Chi Minh City University of Agriculture and Forestry</div>
+                            <div class="addr">Thu Duc, Ho Chi Minh City, Vietnam.</div>
+                            <div class="duration">Sep 2023 - Feb 2024 (Currently still studying)</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">IT Student</div>
+                            <div class="desc">GPA (currently in year 2): 2.75/4</div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Projects</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">None</div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Java
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked disabled />
+
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked disabled />
+
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" checked disabled />
+
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" disabled />
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" disabled />
+                            <label for="ck5"></label>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            HTML</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked disabled />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked disabled />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" disabled />
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" disabled />
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" disabled />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        Football, programming, Listen to music.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
