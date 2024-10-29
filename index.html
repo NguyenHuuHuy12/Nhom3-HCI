@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ - Quản Lý Nhà Sách</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <script>
+    // Hàm mở tab
+    function openTab(evt, tabName) {
+      // Lấy tất cả các phần tử có class="tabcontent" và ẩn đi
+      const tabcontent = document.getElementsByClassName("tabContent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Lấy tất cả các nút có class="tablink" và loại bỏ class "active"
+      const tablinks = document.getElementsByClassName("tablink");
+      for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Hiển thị tab hiện tại và thêm class "active" vào nút đã nhấn
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Hiển thị tab đầu tiên khi tải trang
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementsByClassName("tablink")[0].click();
+    });
+  </script>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div>
+          <a href="index.html" class="logo-square">
+            <div class="logo-square">
+              <div class="logo-leaf">🍃</div>
+              <!-- Biểu tượng chiếc lá -->
+            </div>
+            <span class="logo-text">The Leaf</span></a
+          >
+        </div>
+        <nav>
+          <button class="tablink" onclick="openTab(event,'tab1')">
+            Trang Chủ
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab2')">
+            Quản Lý Sách
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab3')">
+            Kho Hàng
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab4')">
+            Đơn Hàng
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab5')">
+            Khách Hàng
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab6')">
+            Thống Kê
+          </button>
+          <button class="tablink" onclick="openTab(event,'tab7')">
+            Nhân Viên
+          </button>
+        </nav>
+        <div class="user-menu">
+          <img src="avatar.jpg" alt="Avatar" />
+          <span>Quản trị viên</span>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Hiệu Sách ABC</h1>
+        <button>Bắt đầu quản lý ngay</button>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="dashboard">
+        <div class="stat">
+          <h3>Sách hiện có</h3>
+          <p>1234</p>
+        </div>
+        <div class="stat">
+          <h3>Đơn hàng hôm nay</h3>
+          <p>45</p>
+        </div>
+        <div class="stat">
+          <h3>Doanh thu tháng</h3>
+          <p>50,000,000 VNĐ</p>
+        </div>
+      </section>
+
+      <div id="tab1" class="tabContent">
+        <ul>
+          <li>
+            <h2>Why read books?</h2>
+          </li>
+          <p>
+            Reading books offers a wealth of benefits that impact both the mind
+            and the spirit, enriching life in profound ways. Here are some
+            compelling reasons to dive into the world of books:
+          </p>
+          <h3>1)Expand Knowledge and Understanding</h3>
+          <li>
+            <p>
+              Books cover virtually every topic imaginable. By reading widely,
+              you can gain insight into subjects that spark your curiosity, from
+              science and philosophy to history and culture. This knowledge can
+              broaden your perspective, helping you understand the world and
+              your place in it more fully.
+            </p>
+          </li>
+          <h3>2) Strengthen Empathy and Emotional Intelligence</h3>
+          <li>
+            <p>
+              Reading, especially fiction, allows you to experience life through
+              another’s eyes. This practice enhances empathy and helps you
+              understand complex human emotions, improving your relationships
+              and sense of connection to others.
+            </p>
+          </li>
+          <h3>3)Boost Mental Stimulation and Brain Health</h3>
+          <li>
+            <p>
+              Regular reading keeps the brain active and engaged, which can slow
+              cognitive decline as we age. Engaging with complex narratives or
+              challenging topics can improve cognitive function and even delay
+              or prevent conditions like Alzheimer’s and dementia.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <main>
+        <div id="tab2" class="tabContent">
+          <h2>Truyện Thiếu Nhi</h2>
+
+          <div class="card" onclick="openClick('RuaVaTho')">
+            <img
+              src="https://tse2.mm.bing.net/th?id=OIP.BIvDMDIsgKQeKC76YssctgHaEo&pid=Api&P=0&h=220"
+              alt=""
+              class="card-img"
+            />
+            <div class="card-title">Rùa và Thỏ</div>
+          </div>
+
+          <div class="card" onclick="openClick('AnKheTraVang')">
+            <img
+              src="https://tse3.mm.bing.net/th?id=OIP.iJbjpzHtbXo11AhCrqEmqAHaEK&pid=Api&P=0&h=220"
+              alt=""
+              class="card-img"
+            />
+            <div class="card-title">Ăn Khế Trả Vàng</div>
+          </div>
+
+          <div class="card" onclick="openClick('CoBeQuangKhanDo')">
+            <img
+              src="https://tse4.mm.bing.net/th?id=OIP.6k1hDP06Apdaith97jxkNAHaHa&pid=Api&P=0&h=220"
+              alt=""
+              class="card-img"
+            />
+            <div class="card-title">Cô Bé Quàng Khăn Đỏ</div>
+          </div>
+
+          <!-- Add more cards here -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <p>Liên hệ: support@nhasach.vn | SĐT: 0123-456-789</p>
+        <p>&copy; Nhà Sách ABC - 2024</p>
+      </footer>
+    </div>
+  </body>
+</html>

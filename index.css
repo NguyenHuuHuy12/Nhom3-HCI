@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #343a40;
+  color: white;
+  padding: 1rem;
+}
+
+header .logo {
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #007bff;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.stat {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 30%;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.logo-square {
+  width: 100px; /* Tăng kích thước hình vuông */
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Tùy chọn bo tròn góc nếu muốn */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.logo-leaf {
+  font-size: 5rem; /* Tăng kích thước biểu tượng chiếc lá */
+  color: #fff; /* Màu sắc biểu tượng */
+}
+.logo-text {
+  font-size: 20px;
+  color: chartreuse;
+  margin-left: 10px;
+  font-weight: bold;
+}
+h3,
+h2 {
+  font-weight: bold;
+}
+.card {
+  width: 250px; /* Chiều rộng tối thiểu nhỏ hơn */
+  height: 200px; /* Chiều cao cố định mới */
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin: 10px;
+  background-color: white;
+  flex-shrink: 0; /* Đảm bảo các card không bị co lại */
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+.card-title {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+.card-img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 1rem;
+}
+
+.tablink {
+  background-color: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.tablink:hover {
+  background-color: #ddd;
+}
+
+/* Phong cách cho nội dung của các tab */
+.tabContent {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Thêm thanh cuộn ngang nếu cần thiết */
+}
+
+/* Hiệu ứng chuyển động khi thay đổi tab */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main {
+  flex: 1;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
