@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Đơn Hàng - Nhà Sách</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Danh Sách Đơn Hàng</h1>
+            <a href="KhachHang.html" class="back-link">Quay lại Quản Lý Khách Hàng</a>
+        </header>
+
+        <!-- Bảng danh sách đơn hàng -->
+        <section class="order-list">
+            <h2>Danh Sách Khách Hàng Mua Sách</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Khách Hàng</th>
+                        <th>Tên Sách</th>
+                        <th>Đơn Giá (VNĐ)</th>
+                        <th>Ngày Mua</th>
+                    </tr>
+                </thead>
+                <tbody id="orderTableBody">
+                    <!-- Dữ liệu sẽ được thêm vào đây từ localStorage -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; Nhà Sách ABC - 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        // Hàm hiển thị danh sách đơn hàng từ localStorage
+        window.onload = function() {
+            const customerList = JSON.parse(localStorage.getItem("customerList"));
+            const tableBody = document.getElementById("orderTableBody");
+
+            if (customerList && customerList.length > 0) {
+                customerList.forEach(customer => {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).innerText = customer.customerName;
+                    row.insertCell(1).innerText = customer.bookName;
+                    row.insertCell(2).innerText = `${customer.price.toLocaleString()} VNĐ`;
+                    row.insertCell(3).innerText = customer.purchaseDate;
+                });
+            } else {
+                tableBody.innerHTML = "<tr><td colspan='4'>Không có đơn hàng nào.</td></tr>";
+            }
+        }
+    </script>
+</body>
+</html>
