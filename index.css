@@ -160,3 +160,16 @@ main {
   flex-direction: column;
   min-height: 100vh;
 }
+/* Nút Xóa*/
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
