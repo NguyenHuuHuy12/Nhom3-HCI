@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Khách Hàng - Nhà Sách</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quản Lý Khách Hàng</h1>
+            <a href="index.html" class="back-link">Quay lại Trang Chủ</a>
+        </header>
+
+        <!-- Form nhập thông tin khách hàng -->
+        <section class="customer-form">
+            <h2>Thêm Thông Tin Khách Hàng</h2>
+            <form id="addCustomerForm">
+                <label for="customerName">Tên Khách Hàng:</label>
+                <input type="text" id="customerName" required>
+                
+                <label for="bookName">Tên Sách:</label>
+                <input type="text" id="bookName" required>
+                
+                <label for="price">Đơn Giá (VNĐ):</label>
+                <input type="number" id="price" required>
+                
+                <label for="purchaseDate">Ngày Mua:</label>
+                <input type="date" id="purchaseDate" required>
+                
+                <button type="button" onclick="addCustomer()">Thêm Khách Hàng</button>
+            </form>
+        </section>
+
+        <!-- Bảng danh sách khách hàng -->
+        <section class="customer-list">
+            <h2>Danh Sách Khách Hàng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tên Khách Hàng</th>
+                        <th>Tên Sách</th>
+                        <th>Đơn Giá (VNĐ)</th>
+                        <th>Ngày Mua</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTableBody">
+                    <!-- Dữ liệu sẽ được thêm vào đây bằng JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <footer>
+            <p>&copy; Nhà Sách ABC - 2024</p>
+        </footer>
+    </div>
+
+    <script>
+        // Hàm thêm thông tin khách hàng vào bảng
+        function addCustomer() {
+            // Lấy giá trị từ các ô nhập liệu
+            const customerName = document.getElementById("customerName").value;
+            const bookName = document.getElementById("bookName").value;
+            const price = document.getElementById("price").value;
+            const purchaseDate = document.getElementById("purchaseDate").value;
+
+            // Kiểm tra nếu thông tin hợp lệ
+            if (customerName && bookName && price && purchaseDate) {
+                // Tạo một hàng mới cho bảng
+                const table = document.getElementById("customerTableBody");
+                const newRow = table.insertRow();
+
+                // Thêm các ô chứa thông tin khách hàng
+                const nameCell = newRow.insertCell(0);
+                const bookCell = newRow.insertCell(1);
+                const priceCell = newRow.insertCell(2);
+                const dateCell = newRow.insertCell(3);
+
+                nameCell.innerText = customerName;
+                bookCell.innerText = bookName;
+                priceCell.innerText = `${parseInt(price).toLocaleString()} VNĐ`; // Định dạng đơn giá
+                dateCell.innerText = purchaseDate;
+
+                // Reset form
+                document.getElementById("addCustomerForm").reset();
+            } else {
+                alert("Vui lòng nhập đầy đủ thông tin.");
+            }
+        }
+    </script>
+</body>
+</html>
