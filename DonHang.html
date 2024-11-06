@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh Sách Đơn Hàng - Nhà Sách</title>
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Cài đặt phong cách cho các nút */
+        .action-buttons {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .action-buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .action-buttons button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -31,6 +53,12 @@
             </table>
         </section>
 
+        <!-- Nút In và Lưu -->
+        <section class="action-buttons">
+            <button id="printButton" onclick="printList()">In Danh Sách</button>
+            <button id="saveButton" onclick="saveList()">Lưu Danh Sách</button>
+        </section>
+
         <footer>
             <p>&copy; Nhà Sách ABC - 2024</p>
         </footer>
@@ -53,6 +81,34 @@
             } else {
                 tableBody.innerHTML = "<tr><td colspan='4'>Không có đơn hàng nào.</td></tr>";
             }
+        }
+
+        // Hàm in danh sách đơn hàng
+        function printList() {
+            const printWindow = window.open('', '', 'height=500, width=800');
+            const content = document.querySelector('.order-list').innerHTML;
+            printWindow.document.write('<html><head><title>Danh Sách Đơn Hàng</title></head><body>');
+            printWindow.document.write(content);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        }
+
+        // Hàm lưu danh sách dưới dạng tệp JSON
+        function saveList() {
+            const customerList = JSON.parse(localStorage.getItem("customerList"));
+            if (!customerList || customerList.length === 0) {
+                alert("Không có dữ liệu để lưu.");
+                return;
+            }
+
+            // Chuyển mảng khách hàng thành chuỗi JSON
+            const data = JSON.stringify(customerList);
+            const blob = new Blob([data], { type: 'application/json' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'donhang.json'; // Tên tệp khi tải xuống
+            link.click();
         }
     </script>
 </body>
