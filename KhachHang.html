@@ -43,6 +43,7 @@
                         <th>Tên Sách</th>
                         <th>Đơn Giá (VNĐ)</th>
                         <th>Ngày Mua</th>
+                        <th>Hành Động</th> <!-- Cột Hành Động cho nút Xóa -->
                     </tr>
                 </thead>
                 <tbody id="customerTableBody">
@@ -76,11 +77,21 @@
                 const bookCell = newRow.insertCell(1);
                 const priceCell = newRow.insertCell(2);
                 const dateCell = newRow.insertCell(3);
+                const actionCell = newRow.insertCell(4); // Ô cho nút Xóa
 
                 nameCell.innerText = customerName;
                 bookCell.innerText = bookName;
                 priceCell.innerText = `${parseInt(price).toLocaleString()} VNĐ`; // Định dạng đơn giá
                 dateCell.innerText = purchaseDate;
+
+                // Thêm nút Xóa vào ô hành động
+                const deleteButton = document.createElement("button");
+                deleteButton.innerText = "Xóa";
+                deleteButton.classList.add("delete-btn"); // Thêm lớp CSS nếu cần
+                deleteButton.onclick = function () {
+                    table.deleteRow(newRow.rowIndex); // Xóa hàng khỏi bảng
+                };
+                actionCell.appendChild(deleteButton);
 
                 // Reset form
                 document.getElementById("addCustomerForm").reset();
