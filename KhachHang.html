@@ -89,7 +89,13 @@
                 deleteButton.innerText = "Xóa";
                 deleteButton.classList.add("delete-btn"); // Thêm lớp CSS nếu cần
                 deleteButton.onclick = function () {
-                    table.deleteRow(newRow.rowIndex); // Xóa hàng khỏi bảng
+                    // Xóa hàng khỏi bảng
+                    table.deleteRow(newRow.rowIndex);
+
+                    // Kiểm tra nếu bảng không còn hàng dữ liệu
+                    if (table.rows.length === 0) {
+                        document.querySelector(".customer-list table").innerHTML = "<tr><td colspan='5'>Không có khách hàng nào.</td></tr>";
+                    }
                 };
                 actionCell.appendChild(deleteButton);
 
