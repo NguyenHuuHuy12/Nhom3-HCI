@@ -48,27 +48,15 @@
           <button class="tablink" onclick="openTab(event,'tab1')">
             Trang Chủ
           </button>
-          <button class="tablink" onclick="openTab(event,'tab2')">
-            Quản Lý Sách
-          </button>
-          <button class="tablink" onclick="openTab(event,'tab3')">
-            Kho Hàng
-          </button>
-          <button class="tablink" onclick="window.location.href='DonHang.html'">Đơn Hàng</button>
-            
-          </button>
-          <button class="tablink" onclick="window.location.href='KhachHang.html'">Khách Hàng</button>
-            
-          </button>
-          <button class="tablink" onclick="openTab(event,'tab6')">
-            Thống Kê
-          </button>
-          <button class="tablink" onclick="openTab(event,'tab7')">
-            Nhân Viên
-          </button>
+          <a href="quan-li-sach.html"> Quản Lý Sách </a>
+          <a href="kho-hang.html"> Kho Hàng </a>
+          <a href="don-hang.html"> Đơn Hàng </a>
+          <a href="khach-hang.html"> Khách Hàng </a>
+          <a href="thong-ke.html"> Thống Kê </a>
+          <a href="nhan-vien.html"> Nhân Viên </a>
         </nav>
         <div class="user-menu">
-          <img src="avatar.jpg" alt="Avatar" />
+          <img src="a.png" alt="Avatar" />
           <span>Quản trị viên</span>
         </div>
       </header>
@@ -76,23 +64,6 @@
       <!-- Hero Section -->
       <section class="hero">
         <h1>Hiệu Sách ABC</h1>
-        <button>Bắt đầu quản lý ngay</button>
-      </section>
-
-      <!-- Dashboard -->
-      <section class="dashboard">
-        <div class="stat">
-          <h3>Sách hiện có</h3>
-          <p>1234</p>
-        </div>
-        <div class="stat">
-          <h3>Đơn hàng hôm nay</h3>
-          <p>45</p>
-        </div>
-        <div class="stat">
-          <h3>Doanh thu tháng</h3>
-          <p>50,000,000 VNĐ</p>
-        </div>
       </section>
 
       <div id="tab1" class="tabContent">
@@ -135,41 +106,6 @@
           </li>
         </ul>
       </div>
-      <main>
-        <div id="tab2" class="tabContent">
-          <h2>Truyện Thiếu Nhi</h2>
-
-          <div class="card" onclick="openClick('RuaVaTho')">
-            <img
-              src="https://tse2.mm.bing.net/th?id=OIP.BIvDMDIsgKQeKC76YssctgHaEo&pid=Api&P=0&h=220"
-              alt=""
-              class="card-img"
-            />
-            <div class="card-title">Rùa và Thỏ</div>
-          </div>
-
-          <div class="card" onclick="openClick('AnKheTraVang')">
-            <img
-              src="https://tse3.mm.bing.net/th?id=OIP.iJbjpzHtbXo11AhCrqEmqAHaEK&pid=Api&P=0&h=220"
-              alt=""
-              class="card-img"
-            />
-            <div class="card-title">Ăn Khế Trả Vàng</div>
-          </div>
-
-          <div class="card" onclick="openClick('CoBeQuangKhanDo')">
-            <img
-              src="https://tse4.mm.bing.net/th?id=OIP.6k1hDP06Apdaith97jxkNAHaHa&pid=Api&P=0&h=220"
-              alt=""
-              class="card-img"
-            />
-            <div class="card-title">Cô Bé Quàng Khăn Đỏ</div>
-          </div>
-
-          <!-- Add more cards here -->
-        </div>
-      </main>
-
       <!-- Footer -->
       <footer>
         <p>Liên hệ: support@nhasach.vn | SĐT: 0123-456-789</p>

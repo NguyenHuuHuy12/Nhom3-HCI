@@ -1,0 +1,212 @@
+.header-qlk {
+  padding: 10px;
+}
+
+.tab-qlk-container {
+  display: flex;
+}
+
+.tab-qlk {
+  padding: 14px 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #e7e7e7;
+  margin-right: 5px;
+}
+
+.tab-qlk:hover {
+  background-color: #ddd;
+}
+
+.tab-qlk-content {
+  padding: 20px;
+  margin: 20px;
+  display: none;
+}
+
+.tab-qlk-content.active {
+  display: block;
+  color: aqua;
+}
+
+.main-qlk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.container-qlk {
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  max-width: 1100px;
+  padding: 10px;
+  border: 20px solid burlywood;
+  margin-right: 80px;
+}
+
+.item-qlk {
+  background-color: white;
+  border: 10px solid burlywood;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.item-qlk:hover {
+  transform: scale(1.05);
+}
+
+.item-qlk .pic img {
+  border-radius: 10px;
+  height: 220px;
+  width: 300px;
+}
+.name-qlk {
+  font-size: 25px;
+  font-weight: bold;
+  color: red;
+  margin: 5%;
+  display: grid;
+  gap: 1%;
+}
+.box-qlk {
+  margin: 5%;
+  display: grid;
+  border: 1px solid gray;
+  width: 50%;
+}
+.line2-qlk {
+  font-size: 22px;
+  margin: 5%;
+}
+.line3-qlk {
+  font-size: 22px;
+  color: blue;
+  margin: 5%;
+}
+.inventory-box {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.inventory-box input {
+  display: block;
+  margin: 10%;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+select {
+  height: 15%;
+  margin-left: 10%;
+  width: 90%;
+}
+#confirmationDialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: whitesmoke;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  z-index: 1000;
+}
+.totals {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.totals h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.totals div {
+  font-size: 1.2em;
+  color: #555;
+}
+.box-in-out {
+  display: flex;
+}
+.button-qlk {
+  height: 10%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  background-color: #4caf50;
+  color: white;
+}
+.confirm-qlk {
+  width: 40%;
+  font-size: 200%;
+  margin-left: 1%;
+}
+.buu {
+  font-size: 70%;
+  background-color: #4caf50;
+  color: white;
+}
+.button-qlk:hover,
+.buu:hover {
+  background-color: #45a049;
+}
+.h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#yesButton:hover,
+#noButton:hover {
+  background-color: #0056b3;
+}
+select,
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.logo-square {
+  width: 100px; /* Tăng kích thước hình vuông */
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px; /* Tùy chọn bo tròn góc nếu muốn */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+}
+
+.logo-leaf {
+  font-size: 5rem; /* Tăng kích thước biểu tượng chiếc lá */
+  color: #fff; /* Màu sắc biểu tượng */
+}
+.logo-text {
+  font-size: 20px;
+  color: chartreuse;
+  margin-left: 10px;
+  font-weight: bold;
+}

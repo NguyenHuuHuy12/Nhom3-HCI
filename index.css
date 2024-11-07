@@ -33,20 +33,6 @@ header nav a {
   font-size: 2.5rem;
 }
 
-.dashboard {
-  display: flex;
-  justify-content: space-around;
-  margin: 2rem;
-}
-
-.stat {
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-radius: 5px;
-  text-align: center;
-  width: 30%;
-}
-
 footer {
   background: #343a40;
   color: white;
@@ -82,37 +68,7 @@ h3,
 h2 {
   font-weight: bold;
 }
-.card {
-  width: 250px; /* Chiều rộng tối thiểu nhỏ hơn */
-  height: 200px; /* Chiều cao cố định mới */
-  border: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-  margin: 10px;
-  background-color: white;
-  flex-shrink: 0; /* Đảm bảo các card không bị co lại */
-}
 
-.card:hover {
-  transform: scale(1.1);
-}
-.card-title {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-align: center;
-}
-.card-img {
-  width: 100%;
-
-  object-fit: cover;
-}
 .tabs {
   display: flex;
   justify-content: center;
@@ -150,26 +106,16 @@ h2 {
   }
 }
 main {
-  flex: 1;
+  display: flex;
   padding: 20px;
   flex-wrap: wrap;
   gap: 10px;
+  flex: 1;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-/* Nút Xóa*/
-.delete-btn {
-  background-color: #ff4d4d;
-  color: white;
+a {
+  color: black;
+  padding: 10px 20px;
   border: none;
-  padding: 5px 10px;
   cursor: pointer;
-  border-radius: 3px;
-}
-
-.delete-btn:hover {
-  background-color: #ff1a1a;
+  margin: 0 5px;
 }
