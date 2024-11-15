@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="menuProject.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo-square">
+        <div class="logo-square">
+          <div class="logo-leaf">🍃</div>
+        </div>
+        <span class="logo-text">GROUP 3</span>
+      </a>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" onclick="showTab('requirement')"
+            >Requirement</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showTab('design')">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="showTab('implementation')"
+            >Implementation</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section id="requirement" class="tab-content active">
+        <h2 style="text-align: center">Requirement</h2>
+
+        <section class="intro">
+          <div class="bg-image h-100" style="background-color: #f5f7fa">
+            <div class="mask d-flex align-items-center h-100">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body p-0">
+                        <div
+                          class="table-responsive table-scroll"
+                          data-mdb-perfect-scrollbar="true"
+                          style="position: relative; height: 700px"
+                        >
+                          <table class="table table-striped mb-0">
+                            <thead style="background-color: #002d72">
+                              <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Chức năng</th>
+                                <th scope="col">Người đề xuất</th>
+                                <th scope="col">Người thiết kế</th>
+                                <th scope="col">Người thực hiện</th>
+                                <th scope="col">Thời gian dự kiến</th>
+                                <th scope="col">Trạng thái</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Trang chủ và logo</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>11/09/2024 đến 15/09/2024</td>
+                                <td>Lập kế hoạch</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Login và Sign up</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Nguyễn Trần Xuân Đào</td>
+                                <td>Nguyễn Trần Xuân Đào</td>
+                                <td>11/09/2024 đến 15/09/2024</td>
+                                <td>Lập kế hoạch</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Quản lí sách và Kho hàng</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Nguyễn Khánh Duy</td>
+                                <td>Nguyễn Khánh Duy</td>
+                                <td>11/09/2024 đến 15/09/2024</td>
+                                <td>Lập kế hoạch</td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>Nhân viên</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Mai Vũ Thành Hiển</td>
+                                <td>Mai Vũ Thành Hiển</td>
+                                <td>11/09/2024 đến 15/09/2024</td>
+                                <td>Lập kế hoạch</td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>Khách hàng và Đơn hàng</td>
+                                <td>Nguyễn Hữu Huy</td>
+                                <td>Nguyễn Tuấn Kha</td>
+                                <td>Nguyễn Tuấn Kha</td>
+                                <td>11/09/2024 đến 15/09/2024</td>
+                                <td>Lập kế hoạch</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="design" class="tab-content">
+        <h2 style="text-align: center">Design</h2>
+        <!-- Nội dung của tab Design -->
+        <p>Nội dung thiết kế...</p>
+      </section>
+
+      <section id="implementation" class="tab-content">
+        <h2 style="text-align: center">Implementation</h2>
+        <!-- Nội dung của tab Implementation -->
+        <p>Nội dung triển khai...</p>
+      </section>
+    </main>
+    <script>
+      function showTab(tabId) {
+        // Ẩn tất cả các tab
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.remove("active");
+        });
+
+        // Hiển thị tab được chọn
+        document.getElementById(tabId).classList.add("active");
+
+        // Đặt lại trạng thái của các liên kết trong thanh điều hướng
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+        });
+
+        // Kích hoạt tab hiện tại
+        document
+          .querySelector(`a[href='#'][onclick="showTab('${tabId}')"]`)
+          .classList.add("active");
+      }
+    </script>
+  </body>
+</html>

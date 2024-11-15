@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="groupDiary.css">
+    <link rel="stylesheet" href="groupDiary.js">
+    <body>
+      <header>
+        <div>
+          <a href="index.html" class="logo-square">
+            <div class="logo-square">
+              <div class="logo-leaf">🍃</div>
+              <!-- Biểu tượng chiếc lá -->
+            </div>
+            <span class="logo-text">GROUP 3</span></a
+          >
+        </div>
+      </header>
+    
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">	<h2>GROUP DIARY</h2> </div>
+      </div>
+        
+        <div class="row">
+                  
+          <div class="col-md-12">
+            <div class="widget blank no-padding">
+              <div class="panel panel-default work-progress-table">
+                  <!-- Default panel contents -->
+                <div class="panel-heading">
+                
+                </div>
+                  <!-- Table -->
+                <table id="mytable" class="table">
+                  <thead>
+                          <tr>
+                          
+                          <th>STT</th>
+                                                <th>MSSV</th>
+                                                <th>Họ và Tên</th>
+                                                <th>Công việc được giao</th>
+                          <th style="width:25%">kết quả</th>
+                          <th>Tiến độ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                          
+                          <td>1</td>
+                                                <td>23130136</td>
+                                                <td>Nguyễn Hữu Huy</td>
+                                                <td>Trang chủ và Tổng hợp các bộ phận</td>
+                                                
+                          <td>
+                            <div class="progress">
+                              <div style="width: 100%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="red progress-bar">
+                              <span>100%</span>
+                               </div>
+                            </div>
+                          </td>
+                          <td>Hoàn Thành</td>
+                          </tr>
+                          <tr>
+                      
+                          <td>2</td>
+                                                <td>23130044</td> <td>Nguyễn Trần Xuân Đào</td>
+                                                <td>Login và Sign up</td>
+                                               
+                          <td>
+                            <div class="progress">
+                              <div style="width: 80%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" role="progressbar" class="green progress-bar">
+                              <span>80%</span>
+                               </div>
+                            </div>
+                          </td>
+                          <td>Hoàn Thành
+                          </td>
+                          </tr>
+                          <tr>
+                        
+                          <td>3</td>
+                                                <td>23130099</td><td>Mai Vũ Thành Hiển</td>
+                                                <td>About</td>
+                                                
+                          <td>
+                            <div class="progress">
+                              <div style="width: 90%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="purple progress-bar">
+                              <span>90%</span>
+                               </div>
+                            </div>
+                          </td>
+                          <td>Hoàn thành</td>
+                          </tr>
+                          <tr>
+                        
+                          <td>4</td>
+                                                <td>23130076</td><td>Nguyễn Khánh Duy</td>
+                                                <td>Quản lí sách và kho hàng</td>
+                                                
+                          <td>
+                            <div class="progress">
+                              <div style="width: 90%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="purple progress-bar">
+                              <span>90%</span>
+                               </div>
+                            </div>
+                          </td>
+                          <td>Hoàn thành</td>
+                          </tr>
+                          <tr>
+                         
+                          <td>5</td>
+                                                <td>23130141</td> <td>Nguyễn Tuấn Kha</td>
+                                                <td>Đơn hàng và Khách hàng</td>
+                                               
+                          <td>
+                            <div class="progress">
+                              <div style="width: 80%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" role="progressbar" class="red progress-bar">
+                              <span>80%</span>
+                               </div>
+                            </div>
+                          </td>
+                            <td>Hoàn thành</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </div>
+    
+    <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+          <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+            <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+          </div>
+              <div class="modal-body">
+           
+           <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
+           
+          </div>
+            <div class="modal-footer ">
+            <button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+          </div>
+            </div>
+        <!-- /.modal-content --> 
+      </div>
+          <!-- /.modal-dialog --> 
+        </div></body>
+</html>
