@@ -37,7 +37,19 @@
   margin: 0;
   background-color: #f7f7f7;
 }
-
+.button-home {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  color: #e7e7e7;
+  background-color: black;
+  height: 15%;
+  width: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .container-qlk {
   grid-template-columns: repeat(3, 1fr);
   width: 90%;
@@ -209,4 +221,5 @@ input[type="number"] {
   color: chartreuse;
   margin-left: 10px;
   font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }

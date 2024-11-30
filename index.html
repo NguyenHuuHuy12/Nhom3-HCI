@@ -31,6 +31,11 @@
       document.getElementsByClassName("tablink")[0].click();
     });
   </script>
+  <script>
+    function Login() {
+      window.location.href = "login.html";
+    }
+  </script>
 
   <body>
     <div class="container">
@@ -49,18 +54,30 @@
           <button class="tablink" onclick="openTab(event,'tab1')">
             Trang Chủ
           </button>
-          <a href="quan-li-sach.html"> Quản Lý Sách </a>
+          <a href="quan-li-sach1.html"> Quản Lý Sách </a>
           <a href="kho-hang.html"> Kho Hàng </a>
           <a href="don-hang.html"> Đơn Hàng </a>
           <a href="khach-hang.html"> Khách Hàng </a>
           <a href="nhan-vien.html"> Nhân Viên </a>
           <a href="menuProject.html">Menu Project</a>
           <a href="groupDiary.html">Group Diary</a>
-        </nav>
-        <div class="user-menu">
-          <img src="a.png" alt="Avatar" />
-          <span>Quản trị viên</span>
-        </div>
+          <button
+            style="
+              position: absolute;
+              left: 15px;
+              padding: 20px;
+              background-color: aquamarine;
+              border: none;
+              cursor: pointer;
+              border-radius: 10px;
+              margin-left: 94%;
+             bottom: 85%;
+            "
+            onclick="Login()"
+          >
+            Login
+          </button>
+        
       </header>
 
       <!-- Hero Section -->

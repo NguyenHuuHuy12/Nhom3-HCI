@@ -8,18 +8,20 @@
   </head>
   <body>
     <header
-    
       class="header-qlk"
       style="display: flex; justify-content: space-between"
     >
     <div>
-        <a href="index.html" class="logo-square">
-          <div class="logo-square">
-            <div class="logo-leaf">🍃</div>
-            <!-- Biểu tượng chiếc lá -->
-          </div>
-          <span class="logo-text">The Leaf</span></a
-        >
+      <a href="index.html" class="logo-square">
+        <div class="logo-square">
+          <div class="logo-leaf">🍃</div>
+          <!-- Biểu tượng chiếc lá -->
+        </div>
+        <span class="logo-text">GROUP 3</span></a
+      >
+    </div>
+      <div class="button-home" onclick="window.location.href='index.html'">
+        Home
       </div>
       <div class="tab-qlk-container">
         <div class="tab-qlk" onclick="openTab(event, 'stn')">
@@ -1192,7 +1194,7 @@
           "Phương Đông Lướt Ngoài Cửa Sổ",
         ],
       };
-
+      localStorage.setItem('booksByType', JSON.stringify(booksByType));
       function filterBooks(inputValue, suggestionsId) {
         const suggestions = document.getElementById(suggestionsId);
         suggestions.innerHTML = "";
