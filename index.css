@@ -206,6 +206,7 @@ p {
   margin-left: 2%;
   font-size: 150%;
   width: 155vh;
+  cursor: pointer;
 }
 .v-r {
   border-bottom: 1px solid blueviolet;
