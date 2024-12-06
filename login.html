@@ -1,293 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lab 2</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: #f6f6f6;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lab 2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      .container {
-        width: 100%;
-        max-width: 900px;
-      }
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f6f6f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-      .login-container {
-        display: flex;
-        background: #fff;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        border-radius: 10px;
-        overflow: center;
-      }
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
 
-      .login-left,
-      .login-right {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-      }
+    .login-container {
+      display: flex;
+      background: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      overflow: center;
+    }
 
-      .login-left {
-        background: #fff;
-      }
+    .login-left,
+    .login-right {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+    }
 
-      .login-right {
-        background: linear-gradient(135deg, #0436ed, #ff7676);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+    .login-left {
+      background: #fff;
+    }
 
-      h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        font-weight: 600;
-      }
+    .login-right {
+      background: linear-gradient(135deg, #0436ed, #ff7676);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-      .input-group {
-        margin-bottom: 20px;
-      }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
 
-      .input-group label {
-        font-size: 14px;
-        color: #333;
-        margin-bottom: 5px;
-      }
+    .input-group {
+      margin-bottom: 20px;
+    }
 
-      .input-group input {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        outline: none;
-        font-size: 16px;
-      }
+    .input-group label {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+    }
 
-      .remember-me {
-        display: flex;
-        align-items: center;
-      }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      outline: none;
+      font-size: 16px;
+    }
 
-      .remember-me input {
-        margin-right: 5px;
-      }
+    .remember-me {
+      display: flex;
+      align-items: center;
+    }
 
-      .btn {
-        background: linear-gradient(135deg, #071bfc, #ff7676);
-        color: white;
-        padding: 10px 20px;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-        width: 100%;
-      }
+    .remember-me input {
+      margin-right: 5px;
+    }
 
-      .forgot-password {
-        display: block;
-        margin-top: 10px;
-        font-size: 14px;
-        color: #0d27f1;
-        text-align: right;
-        text-decoration: none;
-      }
+    .btn {
+      background: linear-gradient(135deg, #071bfc, #ff7676);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
 
-      .toggle-button {
-        background: white;
-        color: #3220f0;
-        padding: 10px 20px;
-        border-radius: 25px;
-        border: none;
-        cursor: pointer;
-        font-size: 16px;
-      }
+    .forgot-password {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #0d27f1;
+      text-align: right;
+      text-decoration: none;
+    }
 
-      .form-signup {
-        display: none;
-      }
+    .toggle-button {
+      background: white;
+      color: #3220f0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-      .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-        margin-bottom: 20px;
-      }
+    .form-signup {
+      display: none;
+    }
 
-      .social-icon {
-        color: #fff;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.3s;
-      }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
 
-      .social-icon.facebook {
-        background-color: #3b5998;
-      }
+    .social-icon {
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-      .social-icon.twitter {
-        background-color: #1da1f2;
-      }
+    .social-icon.facebook {
+      background-color: #3b5998;
+    }
 
-      .social-icon.google {
-        background-color: #db4a39;
-      }
+    .social-icon.twitter {
+      background-color: #1da1f2;
+    }
 
-      .social-icon:hover {
-        opacity: 0.8;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="login-container">
-        <div class="login-left">
-          <!-- Login Form -->
-          <form
-            id="form-login"
-            class="form-login"
-            action="login.html"
-            method="post"
-          >
-            <h2>Sign In</h2>
-            <div class="social-icons">
-              <a href="#" class="social-icon facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="social-icon twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" class="social-icon google"
-                ><i class="fab fa-google"></i
-              ></a>
-            </div>
-            <div class="input-group">
-              <label for="username">Username</label>
-              <input
-                type="text"
-                id="username"
-                placeholder="Username"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="remember-me">
-              <input type="checkbox" id="remember" />
-              <label for="remember">Remember Me</label>
-            </div>
-            <button type="submit" class="btn">Sign In</button>
-            <a href="Forgot-Password.html" class="forgot-password"
-              >Forgot Password?</a
-            >
-          </form>
+    .social-icon.google {
+      background-color: #db4a39;
+    }
 
-          <!-- Sign Up Form -->
-          <form
-            id="form-signup"
-            class="form-signup"
-            action="signup.html"
-            method="post"
-          >
-            <h2>Create an Account</h2>
-            <div class="input-group">
-              <label for="new-username">Username</label>
-              <input
-                type="text"
-                id="new-username"
-                placeholder="Username"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="Email" required />
-            </div>
-            <div class="input-group">
-              <label for="new-password">Password</label>
-              <input
-                type="password"
-                id="new-password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="input-group">
-              <label for="confirm-password">Confirm Password</label>
-              <input
-                type="password"
-                id="confirm-password"
-                placeholder="Confirm Password"
-                required
-              />
-            </div>
-            <button type="submit" class="btn">Sign Up</button>
-          </form>
-        </div>
-        <div class="login-right">
-          <h2>Welcome</h2>
-          <p id="toggle-text">Don't have an account?</p>
-          <button class="toggle-button" onclick="toggleForms()">Sign Up</button>
-        </div>
+    .social-icon:hover {
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="login-container">
+      <div class="login-left">
+        <!-- Login Form -->
+        <form id="form-login" class="form-login" action="login.html" method="post">
+          <h2>Sign In</h2>
+          <div class="social-icons">
+            <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon google"><i class="fab fa-google"></i></a>
+          </div>
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required />
+          </div>
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember Me</label>
+          </div>
+          <button type="submit" class="btn">Sign In</button>
+          <a href="Forgot-Password.html" class="forgot-password">Forgot Password?</a>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form id="form-signup" class="form-signup" action="signup.html" method="post">
+          <h2>Create an Account</h2>
+          <div class="input-group">
+            <label for="new-username">Username</label>
+            <input type="text" id="new-username" placeholder="Username" required />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="input-group">
+            <label for="new-password">Password</label>
+            <input type="password" id="new-password" placeholder="Password" required />
+          </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="login-right">
+        <h2>Welcome</h2>
+        <p id="toggle-text">Don't have an account?</p>
+        <button class="toggle-button" onclick="toggleForms()">Sign Up</button>
       </div>
     </div>
+  </div>
 
-    <script>
-      function toggleForms() {
-        var loginForm = document.getElementById("form-login");
-        var signupForm = document.getElementById("form-signup");
-        var toggleText = document.getElementById("toggle-text");
-        var toggleButton = document.querySelector(".toggle-button");
+  <script>
+    function toggleForms() {
+      var loginForm = document.getElementById("form-login");
+      var signupForm = document.getElementById("form-signup");
+      var toggleText = document.getElementById("toggle-text");
+      var toggleButton = document.querySelector(".toggle-button");
 
-        if (loginForm.style.display === "none") {
-          loginForm.style.display = "block";
-          signupForm.style.display = "none";
-          toggleText.innerText = "Don't have an account?";
-          toggleButton.innerText = "Sign Up";
-        } else {
-          loginForm.style.display = "none";
-          signupForm.style.display = "block";
-          toggleText.innerText = "Already have an account?";
-          toggleButton.innerText = "Sign In";
-        }
+      if (loginForm.style.display === "none") {
+        loginForm.style.display = "block";
+        signupForm.style.display = "none";
+        toggleText.innerText = "Don't have an account?";
+        toggleButton.innerText = "Sign Up";
+      } else {
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+        toggleText.innerText = "Already have an account?";
+        toggleButton.innerText = "Sign In";
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
