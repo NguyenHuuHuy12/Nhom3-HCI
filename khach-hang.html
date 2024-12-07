@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quản Lý Khách Hàng - Nhà Sách</title>
+  <title>Quản lý khách hàng - Nhà sách</title>
   <link rel="stylesheet" href="khach-hang.css" />
   <script src="khach-hang.js" defer></script>
 </head>
@@ -21,41 +21,41 @@
           <span class="logo-text">GROUP 3</span>
         </a>
       </div>
-      <h1>Quản Lý Khách Hàng</h1>
+      <h1>Quản lý khách hàng</h1>
       <a href="index.html" class="back-link">Quay lại Trang Chủ</a>
     </header>
 
     <!-- Form nhập thông tin khách hàng -->
     <section class="customer-form">
-      <h2>Thêm Thông Tin Khách Hàng</h2>
+      <h2>Thêm thông tin khách hàng</h2>
       <form id="addCustomerForm">
-        <label for="customerName">Tên Khách Hàng:</label>
+        <label for="customerName">Tên khách hàng:</label>
         <input type="text" id="customerName" required />
 
-        <label for="bookName">Tên Sách:</label>
+        <label for="bookName">Tên sách:</label>
         <input type="text" id="bookName" required />
 
-        <label for="price">Đơn Giá (VNĐ):</label>
+        <label for="price">Đơn giá (VNĐ):</label>
         <input type="number" id="price" required />
 
-        <label for="purchaseDate">Ngày Mua:</label>
+        <label for="purchaseDate">Ngày mua:</label>
         <input type="date" id="purchaseDate" required />
 
-        <button type="button" onclick="addCustomer()">Thêm Khách Hàng</button>
+        <button type="button" onclick="addCustomer()">Thêm khách hàng</button>
       </form>
     </section>
 
     <!-- Bảng danh sách khách hàng -->
     <section class="customer-list">
-      <h2>Danh Sách Khách Hàng</h2>
+      <h2>Danh sách khách hàng</h2>
       <table>
         <thead>
           <tr>
-            <th>Tên Khách Hàng</th>
-            <th>Tên Sách</th>
-            <th>Đơn Giá (VNĐ)</th>
-            <th>Ngày Mua</th>
-            <th>Hành Động</th>
+            <th>Tên khách hàng</th>
+            <th>Tên sách</th>
+            <th>Đơn giá (VNĐ)</th>
+            <th>Ngày mua</th>
+            <th>Hành động</th>
             <!-- Cột Hành Động cho nút Xóa -->
           </tr>
         </thead>
@@ -64,7 +64,7 @@
         </tbody>
       </table>
       <!-- Nút xuất dữ liệu sang DonHang.html -->
-      <button type="button" onclick="exportToOrder()">Xuất Danh Sách</button>
+      <button type="button" onclick="exportToOrder()">Xuất danh sách</button>
     </section>
 
     <footer>
