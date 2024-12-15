@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Đơn Hàng - Nhà Sách</title>
+    <link rel="stylesheet" href="don-hang.css" />
+    <script src="don-hang.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <a href="index.html" class="logo">
+            <div class="logo">
+              <img src="img1/b22.png" alt="" style="border-radius: 50%" />
+            </div>
+          </a>
+        </div>
+        <h1>Danh Sách Đơn Hàng</h1>
+        <a href="khach-hang.html" class="back-link"
+          >Quay lại Quản Lý Khách Hàng</a
+        >
+      </header>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Danh sách đơn hàng - Nhà sách</title>
-  <link rel="stylesheet" href="don-hang.css" />
-  <script src="don-hang.js" defer></script>
-</head>
+      <!-- Bảng danh sách đơn hàng -->
+      <section class="order-list">
+        <h2>Danh Sách Khách Hàng Mua Sách</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tên Khách Hàng</th>
+              <th>Tên Sách</th>
+              <th>Đơn Giá (VNĐ)</th>
+              <th>Ngày Mua</th>
+            </tr>
+          </thead>
+          <tbody id="orderTableBody">
+            <!-- Dữ liệu sẽ được thêm vào đây từ localStorage -->
+          </tbody>
+        </table>
+      </section>
 
-<body>
-  <div class="container">
-    <header>
-      <div>
-        <a href="index.html" class="logo-square">
-          <div class="logo-square">
-            <div class="logo-leaf">🍃</div>
-            <!-- Biểu tượng chiếc lá -->
-          </div>
-          <span class="logo-text">GROUP 3</span>
-        </a>
-      </div>
-      <h1>Danh sách đơn hàng</h1>
-      <a href="khach-hang.html" class="back-link">Quay lại Quản lý khách hàng</a>
-    </header>
+      <!-- Nút In và Lưu -->
+      <section class="action-buttons">
+        <button id="printButton" onclick="printList()">In Danh Sách</button>
+        <button id="saveButton" onclick="saveList()">Lưu Danh Sách</button>
+      </section>
 
-    <!-- Bảng danh sách đơn hàng -->
-    <section class="order-list">
-      <h2>Danh sách khách hàng mua sách</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Tên khách hàng</th>
-            <th>Tên sách</th>
-            <th>Đơn giá (VNĐ)</th>
-            <th>Ngày mua</th>
-          </tr>
-        </thead>
-        <tbody id="orderTableBody">
-          <!-- Dữ liệu sẽ được thêm vào đây từ localStorage -->
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Nút In và Lưu -->
-    <section class="action-buttons">
-      <button id="printButton" onclick="printList()">In danh sách</button>
-      <button id="saveButton" onclick="saveList()">Lưu danh sách</button>
-    </section>
-
-    <footer>
-      <p>&copy; Nhà Sách ABC - 2024</p>
-    </footer>
-  </div>
-</body>
-
+      <footer>
+        <p>&copy; Nhà Sách ABC - 2024</p>
+      </footer>
+    </div>
+  </body>
 </html>

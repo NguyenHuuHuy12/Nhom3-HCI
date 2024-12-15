@@ -1,171 +1,140 @@
-.panel.work-progress-table > .panel-heading {
-  background: none repeat scroll 0 0 #efefef;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-  color: #333333;
-  float: left;
-  font-family: roboto;
-  font-size: 16px;
-  font-weight: normal;
-  letter-spacing: 0.3px;
-  padding: 17px 30px 11px;
-  width: 100%;
-}
-.work-progress-table > .panel-heading > i {
-  color: #888888;
-  float: left;
-  font-family: Lato;
-  font-size: 17px;
-  font-style: normal;
-  letter-spacing: 0.3px;
-  line-height: 10px;
-  margin-bottom: 10px;
-  margin-top: 7px;
-  width: 100%;
-}
-
-.panel-default > .panel-heading > .dropdown {
-  float: right;
-  margin-top: -42px;
-}
-
-/* Work Progress table */
-.panel.work-progress-table {
-  border: medium none;
-
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-
-  box-shadow: none;
-  float: left;
+/* groupDiary.css */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
   margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: left;
+  color: #fdaf1f;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #afa24c;
+  padding-bottom: 5px;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
 }
-.panel.work-progress-table > .panel-heading {
-  background: none repeat scroll 0 0 #efefef;
 
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
 
-  color: #333333;
-  float: left;
-  font-family: roboto;
-  font-size: 26px;
-  font-weight: normal;
-  letter-spacing: 0.3px;
-  padding: 17px 30px 11px;
+table th {
+  background-color: #ffbd38;
+  color: rgb(0, 0, 0);
+}
+
+.progress-bar {
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.progress-bar.orange {
+  background-color: orange;
+}
+
+.progress-bar.orange {
+  background-color: orange;
+}
+
+.progress-bar.orange {
+  background-color: orange;
+}
+
+.modal-header {
+  background-color: orange;
+  color: white;
+}
+
+.modal-footer .btn-success {
+  background-color: orange;
+  border: none;
+}
+
+.modal-footer .btn-default {
+  background-color: #ddd;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .row > .col-md-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.logo {
+  width: 0%; /* Tăng kích thước hình vuông */
+  height: 10%;
+
+  display: flex;
+
+  align-items: center;
+
+  position: fixed;
+  top: 8%;
+  left: 0%;
+  text-decoration: none;
+}
+nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-}
-.work-progress-table > .panel-heading > i {
-  color: #888888;
-  float: left;
-  font-family: Lato;
-  font-size: 11px;
-  font-style: normal;
-  letter-spacing: 0.3px;
-  line-height: 10px;
-  margin-bottom: 10px;
-  margin-top: 7px;
-  width: 100%;
-}
-.panel-default > .panel-heading > .dropdown {
-  float: right;
-  margin-top: -42px;
-}
-.work-progress-table td .progress {
-  background: none repeat scroll 0 0 #f3f3f3;
-
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-
-  height: 6px;
-  margin: 7px 0 0;
-  overflow: visible;
-}
-.work-progress-table td .progress > .progress-bar {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -ms-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-
-  position: relative;
-}
-.work-progress-table td .progress > .progress-bar > span {
-  background: none repeat scroll 0 0 #8d8d8d;
-
-  font-family: Roboto;
-  font-size: 10px;
-  height: 18px;
-  line-height: 18px;
-  margin-top: -9px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 31px;
-}
-.work-progress-table .table td {
-  padding: 15px 10px;
-}
-.work-progress-table .table td {
-  font-family: Lato;
-  font-size: 19px;
-  letter-spacing: 0.3px;
-  padding: 15px 10px;
-}
-
-.red,
-.support-ticket .removed,
-.edit-remove > li > .remove,
-.friend-list li > span.offline:before {
-  background: -moz-linear-gradient(top, #ff5959 0%, #ff3b3b 100%);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, #ff3b3b),
-    color-stop(100%, #f9f9f9)
-  );
-  background: -webkit-linear-gradient(top, #ff5959 0%, #ff3b3b 100%);
-  background: -o-linear-gradient(top, #ff5959 0%, #ff3b3b 100%);
-  background: -ms-linear-gradient(top, #ff5959 0%, #ff3b3b 100%);
-  background: linear-gradient(to bottom, #ff5959 0%, #ff3b3b 100%);
-  color: #fff;
-}
-.logo-square {
-  width: 100px; /* Tăng kích thước hình vuông */
-  height: 100px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px; /* Tùy chọn bo tròn góc nếu muốn */
-  position: fixed;
-  top: 10px;
-  left: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 20px;
+  z-index: 1000;
   text-decoration: none;
 }
 
-.logo-leaf {
-  font-size: 5rem; /* Tăng kích thước biểu tượng chiếc lá */
-  color: #fff; /* Màu sắc biểu tượng */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
-.logo-text {
-  font-size: 20px;
-  color: chartreuse;
-  margin-left: 10px;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+
+nav a:hover {
+  text-decoration: none;
+  background-color: #555;
+  border-radius: 5px;
 }

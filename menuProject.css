@@ -1,9 +1,11 @@
 html,
-body,
 .intro {
   height: 100%;
 }
-
+body {
+  flex-direction: column;
+  display: flex;
+}
 table td,
 table th {
   text-overflow: ellipsis;
@@ -30,30 +32,18 @@ thead {
   top: 0;
   position: sticky;
 }
-.logo-square {
-  width: 100px; /* Tăng kích thước hình vuông */
-  height: 100px;
+.logo {
+  width: 0%; /* Tăng kích thước hình vuông */
+  height: 10%;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px; /* Tùy chọn bo tròn góc nếu muốn */
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  text-decoration: none;
-}
 
-.logo-leaf {
-  font-size: 5rem; /* Tăng kích thước biểu tượng chiếc lá */
-  color: #fff; /* Màu sắc biểu tượng */
-}
-.logo-text {
-  font-size: 20px;
-  color: chartreuse;
-  margin-left: 10px;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+
+  position: fixed;
+  top: 8%;
+  left: 0%;
+  text-decoration: none;
 }
 header {
   display: flex;
@@ -81,4 +71,18 @@ header {
 }
 .tab-content {
   display: none;
+}
+.half {
+  flex: 1; /* Mỗi phần chiếm 50% chiều cao */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+
+  overflow: hidden; /* Ngăn tràn nội dung */
+  background: #f0f0f0; /* Màu nền để phân biệt rõ */
+}
+
+img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng */
+  max-height: 100%; /* Đảm bảo ảnh không vượt quá chiều cao */
+  object-fit: contain; /* Giữ tỷ lệ và thu nhỏ ảnh */
 }

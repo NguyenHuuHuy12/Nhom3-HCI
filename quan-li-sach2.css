@@ -257,28 +257,16 @@
   margin-right: 5%;
   height: 10%;
 }
-.logo-square {
-  width: 100px; /* Tăng kích thước hình vuông */
-  height: 100px;
+.logo {
+  width: 0%; /* Tăng kích thước hình vuông */
+  height: 10%;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px; /* Tùy chọn bo tròn góc nếu muốn */
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  text-decoration: none;
-}
 
-.logo-leaf {
-  font-size: 5rem; /* Tăng kích thước biểu tượng chiếc lá */
-  color: #fff; /* Màu sắc biểu tượng */
-}
-.logo-text {
-  font-size: 20px;
-  color: chartreuse;
-  margin-left: 10px;
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+
+  position: fixed;
+  top: 8%;
+  left: 0%;
+  text-decoration: none;
 }
