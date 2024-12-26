@@ -19,7 +19,7 @@
       <div>
         <a href="index.html" class="logo">
           <div class="logo">
-            <img src="img1/b22.png" alt="" style="border-radius: 50%" />
+            <img src="img/b22.png" alt="" style="border-radius: 50%" />
           </div>
         </a>
       </div>
@@ -71,7 +71,9 @@
             </div>
             <button type="submit" class="btn">Login</button>
             <p style="text-align: center">Or</p>
-            <button type="submit" class="btn">Back to Home</button>
+            <button type="submit" onclick="backToHome()" class="btn">
+              Back to Home
+            </button>
             <a href="Forgot-Password.html" class="forgot-password"
               >Forgot Password?</a
             >
@@ -127,7 +129,9 @@
             </div>
             <button type="submit" class="btn">Sign Up</button>
             <p style="text-align: center">Or</p>
-            <button type="submit" class="btn">Back to Home</button>
+            <button type="submit" onclick="backToHome()" class="btn">
+              Back to Home
+            </button>
           </form>
         </div>
         <div class="login-right">
@@ -156,6 +160,9 @@
           toggleText.innerText = "Already have an account?";
           toggleButton.innerText = "Login";
         }
+      }
+      function backToHome() {
+        window.location.href = "index.html";
       }
     </script>
   </body>

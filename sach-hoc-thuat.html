@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachhocthuat</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e6d841051d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sach.css" />
+   
+  </head>
+  <body>
+    <header class="py-1 custom_header">
+        <div
+          class="container d-flex justify-content-between align-items-center me-5"
+        >
+          <a
+            class="navbar-brand fs-3 logo_custom"
+            href="index.html"
+            style="color: #fea81f"
+            >Group 3</a
+          >
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-between align-items-center">
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white active fs-6"
+                      href="index.html"
+                      id="home-tab"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="nhan-vien.html"
+                      id="about-tab"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="groupDiary.html"
+                      id="diary-tab"
+                      >Group diary</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="menuProject.html"
+                      id="to_project-tab"
+                      >Menu Project</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Quản lí sách
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="sach-thieu-nhi.html"
+                            >Sách thiếu nhi</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-khoa-hoc.html">Sách khoa học</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-hoc-thuat.html">Sách học thuật</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="truyen-tranh-manga.html"
+                            >Truyện tranh và Manga</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-du-lich.html">Sách du lịch</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="quan-li-sach2.html"
+                            >Tổng hợp</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                 
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="don-hang.html"
+                      id="diary-tab"
+                      >Đơn hàng</a
+                    >
+                  </li>
+                   <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="y-kien.html"
+                      id="to_project-tab"
+                      >Đánh giá</a
+                    >
+                  </li>
+                  <li
+                    class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom"
+                  >
+                    <a
+                      class="nav-link text-white fs-5 px-4"
+                      href="login.html"
+                      id="login-tab"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <div id="sht" >
+        <div class="container-qls">
+          <div class="title-qls">
+            <span style="margin-right: 5px;"><i class="fas fa-book" ></i></span> Sách Học Thuật
+          </div>
+          <div class="pic-qls">
+            <img src="img1/h72.jdg.png" alt=""width="100%"; height="501px">
+            <img src="img1/ictvietnam-mediacdn-vn-mockup-stem-ca-bo-160759-220819-38.jpg" alt=""width="100%"; height="501px">
+                        </div>
+            
+          <div class="item-qls">
+            <div class="pic"  onclick="openModal('modal-qls31')">
+              <img
+                src="img1/h10.jdg.png"
+                alt="Tâm Lý Học - Những Nguyên Tắc Cơ Bản"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Tâm Lý Học - Những Nguyên Tắc Cơ Bản
+              </div>
+              <div class="name-l2">
+                David G. Myers
+              </div>
+              <div class="name-l3">
+                500,000đ
+              </div>
+              <div class="name-l4">
+                Tóm tắt các khái niệm và nguyên lý cơ bản của tâm lý
+                học.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls32')">
+              <img src="img1/h11.jdg.png" alt="Lịch Sử Việt Nam" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Lịch Sử Việt Nam
+              </div>
+              <div class="name-l2">
+                Trần Quốc Vượng
+              </div>
+              <div class="name-l3">
+                400,000đ
+              </div>
+              <div class="name-l4">
+                Phân tích lịch sử Việt Nam từ thời kỳ cổ đại đến hiện
+                đại.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls33')">
+              <img src="img1/h12.jdg.png" alt="Giáo Dục và Tâm Lý Học" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Giáo Dục và Tâm Lý Học
+              </div>
+              <div class="name-l2">
+                John Dewey
+              </div>
+              <div class="name-l3">
+                280,000đ
+              </div>
+              <div class="name-l4">
+                Khám phá mối quan hệ giữa giáo dục và tâm lý học.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls34')">
+              <img src="img1/h13.jdg.png" alt="Kinh Tế Học Cơ Bản" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Kinh Tế Học Cơ Bản
+              </div>
+              <div class="name-l2">
+                Gregory Mankiw
+              </div>
+              <div class="name-l3">
+                450,000đ
+              </div>
+              <div class="name-l4">
+                Cung cấp các kiến thức cơ bản về kinh tế học.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls35')">
+              <img
+                src="img1/h14.jdg.png"
+                alt="Xã Hội Học: Khái Niệm và Thực Tiễn"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Xã Hội Học: Khái Niệm và Thực Tiễn
+              </div>
+              <div class="name-l2">
+                Émile Durkheim
+              </div>
+              <div class="name-l3">
+                600,000đ
+              </div>
+              <div class="name-l4">
+                Giới thiệu các khái niệm cơ bản trong xã hội học.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls36')">
+              <img src="img1/h15.jdg.png" alt="Triết Học Phương Tây" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Triết Học Phương Tây
+              </div>
+              <div class="name-l2">
+                Bertrand Russell
+              </div>
+              <div class="name-l3">
+                700,000đ
+              </div>
+              <div class="name-l4">
+                Khái quát triết học phương Tây từ cổ đại đến hiện
+                đại.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls37')">
+              <img src="img1/h16.jdg.png" alt="Kỹ Năng Giao Tiếp" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Kỹ Năng Giao Tiếp
+              </div>
+              <div class="name-l2">
+                Dale Carnegie
+              </div>
+              <div class="name-l3">
+                300,000đ
+              </div>
+              <div class="name-l4">
+                Hướng dẫn về kỹ năng giao tiếp hiệu quả.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls38')">
+              <img src="img1/h17.jdg.png" alt="Tư Duy Phản Biện" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Tư Duy Phản Biện
+              </div>
+              <div class="name-l2">
+                Richard Paul
+              </div>
+              <div class="name-l3">
+                350,000đ
+              </div>
+              <div class="name-l4">
+                Phát triển kỹ năng tư duy phản biện trong học tập và cuộc
+    sống.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls39')">
+              <img
+                src="img1/h18.jdg.png"
+                alt="Phân Tích Dữ Liệu Trong Nghiên Cứu Xã Hội"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Phân Tích Dữ Liệu Trong Nghiên Cứu Xã Hội
+              </div>
+              <div class="name-l2">
+                Andrew S. Fullerton
+              </div>
+              <div class="name-l3">
+                650,000đ
+              </div>
+              <div class="name-l4">
+                Phương pháp phân tích dữ liệu trong nghiên cứu xã
+    hội.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Modal Windows -->
+
+        <div id="modal-qls31" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls31')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h10.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Tâm Lý Học - Những Nguyên Tắc Cơ Bản</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>David G. Myers
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Đại học Quốc gia
+                TP.HCM
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>500.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>17 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Tóm tắt các khái niệm và nguyên lý cơ bản của tâm lý
+                  học.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Tâm lý học</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls32" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls32')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h11.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Lịch Sử Việt Nam</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Trần Quốc Vượng
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Văn hóa - Thông
+                tin
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>400.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>16 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Phân tích lịch sử Việt Nam từ thời kỳ cổ đại đến hiện
+                  đại.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Lịch sử</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls33" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls33')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h12.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Giáo Dục và Tâm Lý Học</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>John Dewey
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Giáo dục
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>280.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>14 x 20 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Khám phá mối quan hệ giữa giáo dục và tâm lý học.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Giáo dục</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls34" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls34')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h13.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Kinh Tế Học Cơ Bản</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Gregory Mankiw
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Thống kê
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>450.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>17 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Cung cấp các kiến thức cơ bản về kinh tế học.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Kinh tế học</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls35" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls35')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h14.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Xã Hội Học: Khái Niệm và Thực Tiễn</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Émile Durkheim
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Khoa học Xã hội
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>600.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 22 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Giới thiệu các khái niệm cơ bản trong xã hội học.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Xã hội học</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls36" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls36')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h15.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Triết Học Phương Tây</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Bertrand Russell
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Tri thức
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>700.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>18 x 25 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Khái quát triết học phương Tây từ cổ đại đến hiện
+                  đại.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Triết học</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls37" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls37')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h16.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Kỹ Năng Giao Tiếp</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Dale Carnegie
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Tổng hợp TP.HCM
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>300.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 21 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Hướng dẫn về kỹ năng giao tiếp hiệu quả.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Kỹ năng</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls38" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls38')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h17.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Tư Duy Phản Biện</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Richard Paul
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB ĐHQGHN
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>350.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>16 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Phát triển kỹ năng tư duy phản biện trong học tập và cuộc
+                  sống.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Tư duy</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls39" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls39')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h18.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls"
+                  >Phân Tích Dữ Liệu Trong Nghiên Cứu Xã Hội</span
+                >
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Andrew S. Fullerton
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Khoa học Xã hội
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>650.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>17 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Phương pháp phân tích dữ liệu trong nghiên cứu xã
+                  hội.</span
+                >
+              </div>
+              <div class="l2-qls"><span>Thể loại:</span> Nghiên cứu xã hội</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Hàm để mở modal
+        function openModal(modalId) {
+          // Tìm modal theo id và hiển thị nó
+          document.getElementById(modalId).style.display = "block";
+        }
+      
+        // Hàm để đóng modal
+        function closeModal(modalId) {
+          // Tìm modal theo id và ẩn nó
+          document.getElementById(modalId).style.display = "none";
+        }
+      
+        // Hàm để đóng modal khi bấm ra ngoài modal
+        window.onclick = function(event) {
+          // Kiểm tra nếu người dùng bấm vào vùng ngoài modal, thì đóng modal
+          var modals = document.querySelectorAll('.modal-qls');
+          modals.forEach(function(modal) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        }
+      </script>
+      
+  </body>
+</html>

@@ -1,144 +1,63 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f5f5f5;
-  transition: background-color 0.3s, color 0.3s;
+.custom_header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+.logo_custom {
+  color: #fea81f;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-header {
-  background: url(img1/a33.jpg) no-repeat center center/cover;
-  height: 100vh;
-  color: white;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.logo_custom:hover {
+  color: #fea81f;
+}
+
+.text-custom {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.text-custom:hover {
+  background-color: #555555a8;
+}
+
+.login-custom {
+  background-color: #fea81f;
+  border-color: black;
+}
+
+.login-custom:hover {
+  transform: scale(1.1);
+  background-color: #d17d0d;
+  border-color: #d17d0d;
+}
+
+.background-image_custom {
+  background-image: url("img1/a33.jpg");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
   position: relative;
 }
 
-nav {
+.footer_custom {
   position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 10;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px 20px;
-  z-index: 1000;
-  text-decoration: none;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1rem;
-  padding: 10px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-nav a:hover {
-  text-decoration: none;
-  background-color: #555;
-  border-radius: 5px;
-}
-
-.hero-text {
-  font-size: 8rem;
-  font-weight: bold;
-  padding: 0 20px;
-  text-align: center;
-  background-color: #fea81f;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
-
-footer.dark-mode {
-  background: #1f1f1f;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  nav a {
-    margin: 5px 0;
-    font-size: 0.9rem;
-  }
-
-  .hero-text {
-    font-size: 1.5rem;
-  }
-
-  .content h2 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  nav {
-    padding: 5px;
-  }
-
-  .hero-text {
-    font-size: 3.2rem;
-  }
-
-  .content h2 {
-    font-size: 1.2rem;
-  }
-  /* CSS Media Queries */
-  @media (max-width: 768px) {
-    .login-btn {
-      padding: 6px 10px; /* Giảm padding */
-      font-size: 12px; /* Chữ nhỏ hơn */
-    }
-  }
-
-  @media (max-width: 480px) {
-    .login-btn {
-      top: 5px; /* Điều chỉnh vị trí gần cạnh trên */
-      right: 5px; /* Điều chỉnh vị trí gần cạnh phải */
-      padding: 5px 8px; /* Nhỏ gọn hơn */
-      font-size: 10px; /* Kích thước chữ rất nhỏ */
-    }
-  }
-}
-
-button {
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-  background-color: #444;
-  transform: scale(1.05);
-}
-.logo {
-  width: 0%; /* Tăng kích thước hình vuông */
-  height: 10%;
-
-  display: flex;
-
-  align-items: center;
-
-  position: fixed;
-  top: 8%;
-  left: 0%;
-  text-decoration: none;
+.welcome-custom {
+  color: #ffa500;
+  /* Orange */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

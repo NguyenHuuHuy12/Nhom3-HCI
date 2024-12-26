@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://kit.fontawesome.com/e6d841051d.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="sach.css" />
+  <title>Truyen tranh va Manga</title>
+  </head>
+  <script
+  src="https://kit.fontawesome.com/e6d841051d.js"
+  crossorigin="anonymous"
+></script>
+
+  <body>
+    <header class="py-1 custom_header">
+        <div
+          class="container d-flex justify-content-between align-items-center me-5"
+        >
+          <a
+            class="navbar-brand fs-3 logo_custom"
+            href="index.html"
+            style="color: #fea81f"
+            >Group 3</a
+          >
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-between align-items-center">
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white active fs-6"
+                      href="index.html"
+                      id="home-tab"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="nhan-vien.html"
+                      id="about-tab"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="groupDiary.html"
+                      id="diary-tab"
+                      >Group diary</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="menuProject.html"
+                      id="to_project-tab"
+                      >Menu Project</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Quản lí sách
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="sach-thieu-nhi.html"
+                            >Sách thiếu nhi</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-khoa-hoc.html">Sách khoa học</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-hoc-thuat.html">Sách học thuật</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="truyen-tranh-manga.html"
+                            >Truyện tranh và Manga</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-du-lich.html">Sách du lịch</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="quan-li-sach2.html"
+                            >Tổng hợp</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                 
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="don-hang.html"
+                      id="diary-tab"
+                      >Đơn hàng</a
+                    >
+                  </li>
+                   <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="y-kien.html"
+                      id="to_project-tab"
+                      >Đánh giá</a
+                    >
+                  </li>
+                  <li
+                    class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom"
+                  >
+                    <a
+                      class="nav-link text-white fs-5 px-4"
+                      href="login.html"
+                      id="login-tab"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <div id="ttvmg" >
+        <div class="container-qls">
+          <div class="title-qls">
+            <span style="margin-right: 5px;"><i class="fas fa-book" ></i></span> Truyện Tranh và Manga
+          </div>
+          <div class="pic-qls">
+            <img src="img1/h73.jdg.png" alt=""width="100%"; height="501px">
+            <img src="img1/tao-hinh-nhan-vat-1.jpg" alt=""width="100%"; height="501px">
+                        </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls61')">
+              <img src="img1/h30.jdg.png" alt="Naruto" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Naruto
+              </div>
+              <div class="name-l2">
+                Masashi Kishimoto
+              </div>
+              <div class="name-l3">
+                80,000đ
+              </div>
+              <div class="name-l4">
+                Hành trình của Naruto Uzumaki trong việc trở thành Hokage
+    và những cuộc phiêu lưu của anh.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls62')">
+              <img src="img1/h31.jdg.png" alt="One Piece" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                One Piece
+              </div>
+              <div class="name-l2">
+                Eiichiro Oda
+              </div>
+              <div class="name-l3">
+                90,000đ
+              </div>
+              <div class="name-l4">
+                Cuộc phiêu lưu của Monkey D. Luffy và băng cướp biển của
+                anh trong hành trình tìm kiếm kho báu One Piece.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls63')">
+              <img src="img1/h32.jdg.png" alt="Attack on Titan" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Attack on Titan
+              </div>
+              <div class="name-l2">
+                Hajime Isayama
+              </div>
+              <div class="name-l3">
+                100,000đ
+              </div>
+              <div class="name-l4">
+                Cuộc chiến giữa nhân loại và những sinh vật khổng lồ gọi là
+                Titan.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls64')">
+              <img src="img1/h33.jdg.png" alt="My Hero Academia" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                My Hero Academia
+              </div>
+              <div class="name-l2">
+                Kohei Horikoshi
+              </div>
+              <div class="name-l3">
+                90,000đ
+              </div>
+              <div class="name-l4">
+                Hành trình của Izuku Midoriya trong một thế giới nơi người
+    dân có siêu năng lực.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls65')">
+              <img src="img1/h34.jdg.png" alt="Death Note" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Death Note
+              </div>
+              <div class="name-l2">
+                Tsugumi Ohba
+              </div>
+              <div class="name-l3">
+                100,000đ
+              </div>
+              <div class="name-l4">
+                Câu chuyện về một cuốn sổ ghi chép có khả năng giết người
+                và cuộc chiến trí tuệ giữa các nhân vật chính.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls66')">
+              <img src="img1/h35.jdg.png" alt="Dragon Ball" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Dragon Ball"
+              </div>
+              <div class="name-l2">
+                Akira Toriyama
+              </div>
+              <div class="name-l3">
+                100,000đ
+              </div>
+              <div class="name-l4">
+                Cuộc phiêu lưu của Goku trong việc tìm kiếm những viên ngọc
+                rồng.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls67')">
+              <img src="img1/h36.jdg.png" alt="Fullmetal Alchemist" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Fullmetal Alchemist
+              </div>
+              <div class="name-l2">
+                Hiromu Arakawa
+              </div>
+              <div class="name-l3">
+                90,000đ
+              </div>
+              <div class="name-l4">
+                Hành trình của hai anh em Edward và Alphonse Elric trong
+    tìm kiếm viên đá huyền bí để phục hồi cơ thể.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls68')">
+              <img
+                src="img1/h37.jdg.png"
+                alt="Demon Slayer: Kimetsu no Yaiba"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Demon Slayer: Kimetsu no Yaiba
+              </div>
+              <div class="name-l2">
+                Koyoharu Gotouge
+              </div>
+              <div class="name-l3">
+                90,000đ
+              </div>
+              <div class="name-l4">
+                Cuộc chiến của Tanjiro Kamado chống lại quỷ và tìm cách cứu
+    em gái mình.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls69')">
+              <img src="img1/h38.jdg.png" alt="Tokyo Ghoul" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Tokyo Ghoul
+              </div>
+              <div class="name-l2">
+                Sui Ishida
+              </div>
+              <div class="name-l3">
+                100,000đ
+              </div>
+              <div class="name-l4">
+                Cuộc sống của Ken Kaneki, một người thanh niên trở thành
+    nửa người nửa quỷ.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Modal for Naruto -->
+        <div id="modal-qls61" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls61')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h30.jdg.png"
+                alt="Naruto"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Naruto</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Masashi Kishimoto
+              </div>
+              <div class="l3-qls">
+                <span>Giá bán:</span> 80.000 VNĐ/cuốn (bán theo bộ)
+              </div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Hành trình của Naruto Uzumaki trong việc trở thành Hokage
+                  và những cuộc phiêu lưu của anh.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for One Piece -->
+        <div id="modal-qls62" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls62')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h31.jdg.png"
+                alt="One Piece"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">One Piece</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Eiichiro Oda
+              </div>
+              <div class="l3-qls">
+                <span>Giá bán:</span> 90.000 VNĐ/cuốn (bán theo bộ)
+              </div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Cuộc phiêu lưu của Monkey D. Luffy và băng cướp biển của
+                  anh trong hành trình tìm kiếm kho báu One Piece.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Attack on Titan -->
+        <div id="modal-qls63" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls63')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h32.jdg.png"
+                alt="Attack on Titan"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Attack on Titan</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Hajime Isayama
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 100.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Cuộc chiến giữa nhân loại và những sinh vật khổng lồ gọi là
+                  Titan.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for My Hero Academia -->
+        <div id="modal-qls64" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls64')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h33.jdg.png"
+                alt="My Hero Academia"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">My Hero Academia</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Kohei Horikoshi
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 90.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Hành trình của Izuku Midoriya trong một thế giới nơi người
+                  dân có siêu năng lực.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Death Note -->
+        <div id="modal-qls65" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls65')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h34.jdg.png"
+                alt="Death Note"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Death Note</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Tsugumi Ohba
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 100.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Câu chuyện về một cuốn sổ ghi chép có khả năng giết người
+                  và cuộc chiến trí tuệ giữa các nhân vật chính.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Dragon Ball -->
+        <div id="modal-qls66" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls66')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h35.jdg.png"
+                alt="Dragon Ball"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Dragon Ball</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Akira Toriyama
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 80.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Cuộc phiêu lưu của Goku trong việc tìm kiếm những viên ngọc
+                  rồng.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Fullmetal Alchemist -->
+        <div id="modal-qls67" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls67')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h36.jdg.png"
+                alt="Fullmetal Alchemist"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Fullmetal Alchemist</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Hiromu Arakawa
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 90.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Hành trình của hai anh em Edward và Alphonse Elric trong
+                  tìm kiếm viên đá huyền bí để phục hồi cơ thể.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Demon Slayer -->
+        <div id="modal-qls68" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls68')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h37.jdg.png"
+                alt="Demon Slayer: Kimetsu no Yaiba"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Demon Slayer: Kimetsu no Yaiba</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Koyoharu Gotouge
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 90.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Cuộc chiến của Tanjiro Kamado chống lại quỷ và tìm cách cứu
+                  em gái mình.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal for Tokyo Ghoul -->
+        <div id="modal-qls69" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls69')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h38.jdg.png"
+                alt="Tokyo Ghoul"
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Tokyo Ghoul</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả:</span> Sui Ishida
+              </div>
+              <div class="l3-qls"><span>Giá bán:</span> 100.000 VNĐ/cuốn</div>
+              <div class="l2-qls"><span>Nhà xuất bản:</span> NXB Kim Đồng</div>
+              <div class="l3-qls"><span>Kích thước:</span> 11 x 17.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung:</span>
+                <span style="font-style: italic"
+                  >Cuộc sống của Ken Kaneki, một người thanh niên trở thành
+                  nửa người nửa quỷ.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Hàm để mở modal
+        function openModal(modalId) {
+          // Tìm modal theo id và hiển thị nó
+          document.getElementById(modalId).style.display = "block";
+        }
+      
+        // Hàm để đóng modal
+        function closeModal(modalId) {
+          // Tìm modal theo id và ẩn nó
+          document.getElementById(modalId).style.display = "none";
+        }
+      
+        // Hàm để đóng modal khi bấm ra ngoài modal
+        window.onclick = function(event) {
+          // Kiểm tra nếu người dùng bấm vào vùng ngoài modal, thì đóng modal
+          var modals = document.querySelectorAll('.modal-qls');
+          modals.forEach(function(modal) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        }
+      </script>
+  </body>
+</html>

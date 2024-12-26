@@ -1,48 +1,178 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Library Chill</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e6d841051d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="index.css" />
+    <title>Group 3</title>
   </head>
-  <body>
-    <a
-      href="login.html"
-      style="
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        background-color: #f6b321;
-        padding: 10px 15px;
-        border-radius: 5px;
-        color: white;
-        text-decoration: none;
-        z-index: 1001;
-      "
-      >Login</a
-    >
-   
-    </div>
-    <header>
-      <nav>
-        <div>
-          <a href="index.html" class="logo">
-            <div class="logo"><img src="img1/b22.png" alt="" style="border-radius: 50%;"/></div>
-          </a>
-        </div>
-        <a href="groupDiary.html" class="tab">Group Diary</a>
-        <a href="menuProject.html">Menu Project</a>
-        <a href="quan-li-sach1.html">Quản lí sách</a>
-        <a href="kho-hang.html">Kho hàng</a>
-        <a href="khach-hang.html">Khánh hàng</a>
-        <a href="nhan-vien.html">Nhân viên</a>
-      </nav>
-      <div class="hero-text" style="color: rgb(0, 0, 0)">Library Chill</div>
-    </header>
 
-    <footer>
-      &copy; 2024 Arlington Libraries Foundation. All rights reserved.
-    </footer>
+  <body>
+    <div class="d-flex flex-column" style="min-height: 100vh">
+      <header class="py-1 custom_header">
+        <div
+          class="container d-flex justify-content-between align-items-center me-5"
+        >
+          <a
+            class="navbar-brand fs-3 logo_custom"
+            href="index.html"
+            style="color: #fea81f"
+            >Group 3</a
+          >
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-between align-items-center">
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white active fs-5"
+                      href="index.html"
+                      id="home-tab"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="nhan-vien.html"
+                      id="about-tab"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="groupDiary.html"
+                      id="diary-tab"
+                      >Group diary</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="menuProject.html"
+                      id="to_project-tab"
+                      >Menu Project</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Quản lí sách
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="sach-thieu-nhi.html"
+                            >Sách thiếu nhi</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-khoa-hoc.html"
+                            >Sách khoa học</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-hoc-thuat.html"
+                            >Sách học thuật</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="truyen-tranh-manga.html"
+                            >Truyện tranh và Manga</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-du-lich.html"
+                            >Sách du lịch</a
+                          >
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="quan-li-sach2.html"
+                            >Tổng hợp</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="don-hang.html"
+                      id="to_project-tab"
+                      >Đơn hàng</a
+                    >
+                  </li>
+
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="y-kien.html"
+                      id="to_project-tab"
+                      >Đánh giá</a
+                    >
+                  </li>
+                  <li
+                    class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom"
+                  >
+                    <a
+                      class="nav-link text-white fs-5 px-4"
+                      href="login.html"
+                      id="login-tab"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div
+        class="background-image_custom justify-content-center align-items-center d-flex"
+      >
+        <p class="display-1 display-md-3 welcome-custom">Welcome to Group 3</p>
+      </div>
+      <footer
+        class="text-white text-center py-3 footer_custom align-items-center"
+        style="width: 100%"
+      >
+        <p class="m-0 text-custom">&copy; 2024 Group 3. All Rights Reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>

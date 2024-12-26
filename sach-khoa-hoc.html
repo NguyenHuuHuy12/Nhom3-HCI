@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e6d841051d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="sach.css" />
+    <title>Sach khoa hoc</title>
+  </head>
+  <body>
+    <header class="py-1 custom_header">
+        <div
+          class="container d-flex justify-content-between align-items-center me-5"
+        >
+          <a
+            class="navbar-brand fs-3 logo_custom"
+            href="index.html"
+            style="color: #fea81f"
+            >Group 3</a
+          >
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-between align-items-center">
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white active fs-6"
+                      href="index.html"
+                      id="home-tab"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="nhan-vien.html"
+                      id="about-tab"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="groupDiary.html"
+                      id="diary-tab"
+                      >Group diary</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="menuProject.html"
+                      id="to_project-tab"
+                      >Menu Project</a
+                    >
+                  </li>
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Quản lí sách
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item" href="sach-thieu-nhi.html"
+                            >Sách thiếu nhi</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-khoa-hoc.html">Sách khoa học</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-hoc-thuat.html">Sách học thuật</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="truyen-tranh-manga.html"
+                            >Truyện tranh và Manga</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="sach-du-lich.html">Sách du lịch</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="quan-li-sach2.html"
+                            >Tổng hợp</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                  <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-6"
+                      href="don-hang.html"
+                      id="diary-tab"
+                      >Đơn hàng</a
+                    >
+                  </li>
+                 <li class="nav-item nav-sub-hov text-custom btn">
+                    <a
+                      class="nav-link text-white fs-5"
+                      href="y-kien.html"
+                      id="to_project-tab"
+                      >Đánh giá</a
+                    >
+                  </li>
+                  <li
+                    class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom"
+                  >
+                    <a
+                      class="nav-link text-white fs-5 px-4"
+                      href="login.html"
+                      id="login-tab"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <div id="skh">
+        <div class="container-qls">
+          <div class="title-qls">
+            <span style="margin-right: 5px;"><i class="fas fa-book" ></i></span>Sách Khoa Học
+          </div>
+          <div class="pic-qls">
+            <img src="img1/h71.jdg.png" alt=""width="100%"; height="501px">
+            <img src="img1/1461.jpg" alt= />
+                        </div>
+            
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls21')">
+              <img src="img1/h20.jdg.png" alt="Sapiens: Lược Sử Loài Người" />
+            </div>
+
+              <div class="name-qls">
+                <div class="name-l1">
+                  Sapiens: Lược Sử Loài Người
+                </div>
+                <div class="name-l2">
+                  Yuval Noah Harari
+                </div>
+                <div class="name-l3">
+                  350,000đ
+                </div>
+                <div class="name-l4">
+                  Khám phá lịch sử và tiến hóa của loài người từ thời kỳ săn
+    bắn hái lượm đến xã hội hiện đại.
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <div class="name-buu1">
+                    Mượn
+                  </div>
+                  <div class="name-buu2"> 
+                    Thêm vào giỏ hàng
+                  </div>
+                </div>
+                </div>
+            </div>
+           
+          
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls22')">
+              <img src="img1/h21.jdg.png" alt="Khám Phá Vũ Trụ" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Khám Phá Vũ Trụ
+              </div>
+              <div class="name-l2">
+                Neil deGrasse Tyson
+              </div>
+              <div class="name-l3">
+                300,000đ
+              </div>
+              <div class="name-l4">
+                Giới thiệu về vũ trụ, các hiện tượng thiên văn và những
+    khám phá mới trong lĩnh vực khoa học không gian.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls23')">
+              <img src="img1/h22.jdg.png" alt="Vật Lý Vô Biên" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Vật Lý Vô Biên
+              </div>
+              <div class="name-l2">
+                Brian Greene
+              </div>
+              <div class="name-l3">
+                400,000đ
+              </div>
+              <div class="name-l4">
+                Giải thích các khái niệm vật lý hiện đại một cách dễ hiểu
+    và hấp dẫn.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls24')">
+              <img
+                src="img1/h23.jdg.png"
+                alt="Tế Bào: Câu Chuyện Về Cuộc Sống"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Tế Bào: Câu Chuyện Về Cuộc Sống
+              </div>
+              <div class="name-l2">
+              Paul Nurse
+              </div>
+              <div class="name-l3">
+                280,000đ
+              </div>
+              <div class="name-l4">
+                Khám phá thế giới tế bào, căn nguyên của sự sống và vai trò
+    của tế bào trong cơ thể.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls25')">
+              <img
+                src="img1/h24.jdg.png"
+                alt="Sự Hình Thành Của Các Dân Tộc"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Sự Hình Thành Của Các Dân Tộc
+              </div>
+              <div class="name-l2">
+                Jared Diamond
+              </div>
+              <div class="name-l3">
+                350,000đ
+              </div>
+              <div class="name-l4">
+                Nghiên cứu nguyên nhân hình thành và phát triển của các nền
+                văn minh khác nhau.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls">
+            <div class="pic" onclick="openModal('modal-qls26')">
+              <img
+                src="img1/h25.jdg.png"
+                alt="Lịch Sử Tự Nhiên Của Thời Gian"
+              />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Lịch Sử Tự Nhiên Của Thời Gian
+              </div>
+              <div class="name-l2">
+                Stephen Hawking
+              </div>
+              <div class="name-l3">
+                320,000đ
+              </div>
+              <div class="name-l4">
+                Giới thiệu về vũ trụ, thời gian và những câu hỏi lớn về tồn
+                tại.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls27')">
+              <img src="img1/h26.jdg.png" alt="Lý Thuyết Dòng Thời Gian" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Lý Thuyết Dòng Thời Gian
+              </div>
+              <div class="name-l2">
+                Kip Thorne
+              </div>
+              <div class="name-l3">
+                450,000đ
+              </div>
+              <div class="name-l4">
+                Giải thích về lý thuyết dòng thời gian và các hiện tượng
+    vật lý liên quan.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls28')">
+              <img src="img1/h27.jdg.png" alt="Gene: Một Lịch Sử Ngắn" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Gene: Một Lịch Sử Ngắn
+              </div>
+              <div class="name-l2">
+                Siddhartha Mukherjee
+              </div>
+              <div class="name-l3">
+                400,000đ
+              </div>
+              <div class="name-l4">
+                Câu chuyện về gene, di truyền và ảnh hưởng của chúng đến
+    cuộc sống con người.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+          <div class="item-qls" >
+            <div class="pic" onclick="openModal('modal-qls29')">
+              <img src="img1/h28.jdg.png" alt="Khoa Học Về Giấc Ngủ" />
+            </div>
+            <div class="name-qls">
+              <div class="name-l1">
+                Khoa Học Về Giấc Ngủ
+              </div>
+              <div class="name-l2">
+                Matthew Walker
+              </div>
+              <div class="name-l3">
+               360,000đ
+              </div>
+              <div class="name-l4">
+                Nghiên cứu về giấc ngủ, tầm quan trọng của nó đối với sức
+    khỏe và sự phát triển của con người.
+              </div>
+              <div style="display: flex; justify-content: space-between;">
+                <div class="name-buu1">
+                  Mượn
+                </div>
+                <div class="name-buu2"> 
+                  Thêm vào giỏ hàng
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+
+        <!-- Modal Windows -->
+
+        <div id="modal-qls21" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls21')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h20.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Sapiens: Lược Sử Loài Người</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Yuval Noah Harari
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Trẻ
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>350.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>14.5 x 20.5 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Khám phá lịch sử và tiến hóa của loài người từ thời kỳ săn
+                  bắn hái lượm đến xã hội hiện đại.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls22" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls22')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h21.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Khám Phá Vũ Trụ</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Neil deGrasse Tyson
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Kim Đồng
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>300.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 23 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Giới thiệu về vũ trụ, các hiện tượng thiên văn và những
+                  khám phá mới trong lĩnh vực khoa học không gian.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls23" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls23')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h22.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Vật Lý Vô Biên</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Brian Greene
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Tri Thức
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>400.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>16 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Giải thích các khái niệm vật lý hiện đại một cách dễ hiểu
+                  và hấp dẫn.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls24" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls24')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h23.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Tế Bào: Câu Chuyện Về Cuộc Sống</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Paul Nurse
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Kim Đồng
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>280.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>14 x 20 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Khám phá thế giới tế bào, căn nguyên của sự sống và vai trò
+                  của tế bào trong cơ thể.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls25" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls25')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h24.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Sự Hình Thành Của Các Dân Tộc</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Jared Diamond
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Thế Giới
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>350.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 23 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Nghiên cứu nguyên nhân hình thành và phát triển của các nền
+                  văn minh khác nhau.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls26" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls26')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h25.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div>
+                <span class="l1-qls">Lịch Sử Tự Nhiên Của Thời Gian</span>
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Stephen Hawking
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Trẻ
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>320.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 21 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Giới thiệu về vũ trụ, thời gian và những câu hỏi lớn về tồn
+                  tại.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls27" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls27')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h26.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Lý Thuyết Dòng Thời Gian</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Kip Thorne
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Tri Thức
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>450.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>16 x 24 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Giải thích về lý thuyết dòng thời gian và các hiện tượng
+                  vật lý liên quan.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal-qls28" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls28')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h27.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Gene: Một Lịch Sử Ngắn</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Siddhartha Mukherjee
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Kim Đồng
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>400.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 23 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Câu chuyện về gene, di truyền và ảnh hưởng của chúng đến
+                  cuộc sống con người.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="modal-qls29" class="modal-qls">
+          <span class="modal-qls-close" onclick="closeModal('modal-qls29')">X</span>
+          <div class="modal-qls-content">
+            <div class="box-l-qls">
+              <img
+                src="img1/h28.jdg.png"
+                alt=""
+                height="500px"
+                width="300px"
+                style="border-radius: 20px"
+              />
+            </div>
+            <div style="width: 2px; color: black"></div>
+            <div class="box-r-qls">
+              <div><span class="l1-qls">Khoa Học Về Giấc Ngủ</span></div>
+              <div class="l2-qls">
+                <span class="bold-qls">Tác giả: </span>Matthew Walker
+              </div>
+              <div class="l2-qls">
+                <span class="bold-qls">Nhà xuất bản: </span>NXB Thế Giới
+              </div>
+              <div class="l3-qls">
+                <span class="bold-qls">Giá bán: </span>360.000 VNĐ
+              </div>
+              <div class="l3-qls"><span>Kích thước: </span>15 x 21 cm</div>
+              <span class="l6-qls"> Đánh giá:
+                <div class="star">
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-solid fa-star" style="color: yellow;"></i></div>
+                  <div><i class="fa-regular fa-star-half-stroke" style="color: yellow;"></i></div>
+                </div>
+              </span>
+              <div class="l3-qls">
+                <span class="bold-qls">Nội dung: </span
+                ><span style="font-style: italic"
+                  >Nghiên cứu về giấc ngủ, tầm quan trọng của nó đối với sức
+                  khỏe và sự phát triển của con người.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        // Hàm để mở modal
+        function openModal(modalId) {
+          // Tìm modal theo id và hiển thị nó
+          document.getElementById(modalId).style.display = "block";
+        }
+      
+        // Hàm để đóng modal
+        function closeModal(modalId) {
+          // Tìm modal theo id và ẩn nó
+          document.getElementById(modalId).style.display = "none";
+        }
+      
+        // Hàm để đóng modal khi bấm ra ngoài modal
+        window.onclick = function(event) {
+          // Kiểm tra nếu người dùng bấm vào vùng ngoài modal, thì đóng modal
+          var modals = document.querySelectorAll('.modal-qls');
+          modals.forEach(function(modal) {
+            if (event.target === modal) {
+              modal.style.display = "none";
+            }
+          });
+        }
+      </script>
+      
+  </body>
+</html>
