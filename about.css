@@ -1,0 +1,91 @@
+.custom_header {
+    background-color: rgba(0, 0, 0);
+    position: relative;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.logo_custom {
+    color: #fea81f;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.logo_custom:hover {
+    color: #fea81f;
+}
+
+.text-custom {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.text-custom:hover {
+    background-color: #555555a8;
+}
+
+.login-custom {
+    background-color: #fea81f;
+    border-color: black;
+}
+
+.login-custom:hover {
+    transform: scale(1.1);
+    background-color: #fea81f;
+    border-color: #fea81f;
+}
+
+.footer_custom {
+    background-color: rgba(0, 0, 0);
+}
+
+.image_about {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card_text {
+    font-size: 1,2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+}
+
+.card_custom {
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.github-icon {
+    font-size: 1.8rem;
+    color: blue;
+}
+
+.github-icon:hover {
+    color: #fea81f;
+}
+.title_about{
+    font-family: "Bungee", sans-serif;
+    font-weight: 500;
+    font-style: bold;
+    margin-bottom: 2rem;
+}

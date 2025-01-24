@@ -1,0 +1,152 @@
+.custom_header {
+  background-color: rgba(0, 0, 0);
+  position: relative;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.logo_custom {
+  color: #fea81f;
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logo_custom:hover {
+  color: #fea81f;
+}
+
+.text-custom {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+.text-custom:hover {
+  background-color: #555555a8;
+}
+.login-custom {
+  background-color: #fea81f;
+  border-color: black;
+}
+.login-custom:hover {
+  transform: scale(1.1);
+  background-color: #3399ff;
+  border-color: #3399ff;
+}
+.footer_custom {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  background-color: rgba(0, 0, 0);
+}
+
+.welcome-custom {
+  color: #ffa500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.table th {
+  background-color: #fea81f;
+}
+.progress_custom {
+  max-height: 25px;
+  height: 25px;
+}
+.progress-bar-custom {
+  background-color: #fea81f;
+}
+table th,
+table td {
+  /* Các thuộc tính CSS bạn muốn áp dụng */
+
+  padding-top: 10px !important;
+  padding-bottom: 15px !important;
+}
+.week_font {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+table {
+  background-color: #f8f9fa;
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+th {
+  background-color: #343a40;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+td {
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  color: #495057;
+}
+tr:last-child {
+  background-color: #e9ecef;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+td a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+td a:hover {
+  color: #0056b3;
+}
+.table-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.table-container .col-md-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.table-container .table {
+  flex: 1;
+  height: auto;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.table-container .table th,
+.table-container .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table-container .table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table-container .table td a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.table-container .table td a:hover {
+  text-decoration: underline;
+}
+
+/* Đảm bảo bảng nằm trong màn hình */
+.table-container {
+  overflow: auto;
+  height: calc(100vh - 20px); /* Trừ khoảng cách cho các thành phần khác */
+}

@@ -1,63 +1,63 @@
 .custom_header {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  z-index: 10;
-  width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
 .logo_custom {
-  color: #fea81f;
-  font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    color: #fea81f;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .logo_custom:hover {
-  color: #fea81f;
+    color: #fea81f;
 }
 
 .text-custom {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
 }
 
 .text-custom:hover {
-  background-color: #555555a8;
+    background-color: #555555a8;
 }
 
 .login-custom {
-  background-color: #fea81f;
-  border-color: black;
+    background-color: #fea81f;
+    border-color: black;
 }
 
 .login-custom:hover {
-  transform: scale(1.1);
-  background-color: #d17d0d;
-  border-color: #d17d0d;
+    transform: scale(1.1);
+    background-color: #d17d0d;
+    border-color: #d17d0d;
 }
 
 .background-image_custom {
-  background-image: url("img1/a33.jpg");
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  position: relative;
+    background-image: url('img/a33.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    position: relative;
 }
 
 .footer_custom {
-  position: fixed;
-  z-index: 10;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .welcome-custom {
-  color: #ffa500;
-  /* Orange */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  font-family: "Bungee", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    color: #FFA500;
+    /* Orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
