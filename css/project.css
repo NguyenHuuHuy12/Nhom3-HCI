@@ -70,21 +70,29 @@
 .accordion-header {
   background-color: #f5f5f5;
   border: none;
-  padding: 15px;
+  padding: 1rem;
   text-align: left;
   width: 100%;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
 }
-
+.design_dowload{
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.group_button{
+  display: flex;
+}
 .accordion-header:focus {
   outline: none;
 }
 
 .accordion-content {
   display: none;
-  padding: 15px;
+  padding: 1rem;
   background-color: #fff;
   animation: fadeIn 0.3s ease-in-out;
 }
