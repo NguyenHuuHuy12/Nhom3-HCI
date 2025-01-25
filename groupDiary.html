@@ -1,977 +1,727 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/e6d841051d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="groupDiary.css" />
-    <title>Group diary</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <body>
-    <div class="d-flex flex-column" style="min-height: 100vh">
-      <header class="py-1 custom_header">
-        <div
-          class="container d-flex justify-content-between align-items-center me-5"
-        >
-          <a
-            class="navbar-brand fs-3 logo_custom"
-            href="#"
-            style="color: #fea81f"
-            >Group 3</a
-          >
-          <nav class="navbar navbar-expand-lg navbar-dark p-0">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav justify-content-between align-items-center">
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white active fs-6"
-                      href="index.html"
-                      id="home-tab"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white fs-6"
-                      href="about.html"
-                      id="about-tab"
-                      >About</a
-                    >
-                  </li>
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white fs-6"
-                      href="groupDiary.html"
-                      id="diary-tab"
-                      >Group diary</a
-                    >
-                  </li>
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white fs-6"
-                      href="project.html"
-                      id="project-tab"
-                      >Menu Project</a
-                    >
-                  </li>
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white fs-6"
-                      href="styleGuide.html"
-                      id="project-tab"
-                      >Style guide</a
-                    >
-                  </li>
-                  <li class="nav-item nav-sub-hov text-custom btn">
-                    <a
-                      class="nav-link text-white fs-5"
-                      href="result.html"
-                      id="to_project-tab"
-                      >Result</a
-                    >
-                  </li>
-                  <li
-                    class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom"
-                  >
-                    <a
-                      class="nav-link text-white fs-5 px-4"
-                      href="login.html"
-                      id="login-tab"
-                      >Login</a
-                    >
-                  </li>
-                </ul>
-              </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@200..700&family=Protest+Strike&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/e6d841051d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="groupDiary.css" />
+  <title>Group diary</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column" style="min-height: 100vh">
+    <header class="py-1 custom_header">
+      <div class="container d-flex justify-content-between align-items-center me-5">
+        <a class="navbar-brand fs-3 logo_custom" href="#" style="color: #fea81f">Group 3</a>
+        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav justify-content-between align-items-center">
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white active fs-6" href="index.html" id="home-tab">Home</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white fs-6" href="about.html" id="about-tab">About</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white fs-6" href="groupDiary.html" id="diary-tab">Group diary</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white fs-6" href="project.html" id="project-tab">Menu Project</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white fs-6" href="styleGuide.html" id="project-tab">Style guide</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn">
+                  <a class="nav-link text-white fs-5" href="result.html" id="to_project-tab">Result</a>
+                </li>
+                <li class="nav-item nav-sub-hov text-custom btn btn-outline-primary p-0 login-custom">
+                  <a class="nav-link text-white fs-5 px-4" href="login.html" id="login-tab">Login</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
-      </header>
-      <div class="container">
-        <nav aria-label="breadcrumb" class="mt-3">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Group diary
-            </li>
-          </ol>
+          </div>
         </nav>
       </div>
-      <div class="container">
-        <ul
-          class="nav nav-tabs container"
-          role="tablist"
-          id="weekTabs"
-          style="justify-content: center"
-        >
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link active" data-toggle="tab" href="#week1"
-              >Week 1</a
-            >
+    </header>
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Group diary
           </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week2">Week 2</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week3">Week 3</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week4">Week 4</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week5">Week 5</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week6">Week 6</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week7">Week 7</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week8">Week 8</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week9">Week 9</a>
-          </li>
-          <li class="nav-item nav-sub-hov">
-            <a class="nav-link" data-toggle="tab" href="#week10">Week 10</a>
-          </li>
-        </ul>
+        </ol>
+      </nav>
+    </div>
+    <div class="container">
+      <ul class="nav nav-tabs container" role="tablist" id="weekTabs" style="justify-content: center">
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link active" data-toggle="tab" href="#week1">Week 1</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week2">Week 2</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week3">Week 3</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week4">Week 4</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week5">Week 5</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week6">Week 6</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week7">Week 7</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week8">Week 8</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week9">Week 9</a>
+        </li>
+        <li class="nav-item nav-sub-hov">
+          <a class="nav-link" data-toggle="tab" href="#week10">Week 10</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-pane container active" id="week1" style="margin-bottom: 5rem;">
+      <div class="table-responsive">
+        <h1 class="title text-center py-3 week_font">Week 1 work</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">STT</th>
+              <th scope="col" style="width: 11%">Id</th>
+              <th scope="col" style="width: 15%">Name</th>
+              <th scope="col" style="width: 25%">Assigned work</th>
+              <th scope="col" style="width: 19%">Progress</th>
+              <th scope="col" style="width: 14%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" style="text-align: center">1</td>
+              <td class="text-center">22130247</td>
+              <td>Mai Vũ Thành Hiển</td>
+              <td>
+                <p>Create group diary page</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Nguyễn Hữu Huy</td>
+              <td>
+                <p>Trang chủ và tổng hợp các bộ phận</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">3</td>
+              <td class="text-center">23130388</td>
+              <td>Nguyễn Khánh Duy</td>
+              <td>Create Register function in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">4</td>
+              <td class="text-center">22130209</td>
+              <td>Nguyễn Trần Xuân Đào</td>
+              <td>create login fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">5</td>
+              <td class="text-center">23130323</td>
+              <td> Nguyễn Tuấn Kha</td>
+              <td>Create forgot pass fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="tab-pane container active" id="week1">
-        <div class="table-responsive">
-          <h1 class="title text-center py-3 week_font">Week 1 work</h1>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr class="text-center">
-                <th scope="col" style="width: 5%">STT</th>
-                <th scope="col" style="width: 11%">Id</th>
-                <th scope="col" style="width: 15%">Name</th>
-                <th scope="col" style="width: 25%">Assigned work</th>
-                <th scope="col" style="width: 19%">Progress</th>
-                <th scope="col" style="width: 14%">Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row" style="text-align: center">1</td>
-                <td class="text-center">22130247</td>
-                <td>Mai Vũ Thành Hiển</td>
-                <td>
-                  <p>Create group diary page</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+    </div>
+    <div class="tab-pane container active" id="week2" style="display: none;margin-bottom: 5rem;">
+      <div class="table-responsive">
+        <h1 class="title text-center">Week 2 work</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">STT</th>
+              <th scope="col" style="width: 11%">Id</th>
+              <th scope="col" style="width: 15%">Name</th>
+              <th scope="col" style="width: 25%">Assigned work</th>
+              <th scope="col" style="width: 17%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Mai Vũ Thành Hiển</td>
+              <td>
+                <p>Create group diary page</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">2</td>
-                <td class="text-center">21129858</td>
-                <td>Nguyễn Hữu Huy</td>
-                <td>
-                  <p>Trang chủ và tổng hợp các bộ phận</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Nguyễn Hữu Huy</td>
+              <td>
+                <p>Create menu project, home project</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">3</td>
-                <td class="text-center">23130388</td>
-                <td>Nguyễn Khánh Duy</td>
-                <td>Create Register function in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">3</td>
+              <td class="text-center">23130388</td>
+              <td>Nguyễn Khánh Duy</td>
+              <td>Create Register function in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">4</td>
-                <td class="text-center">22130209</td>
-                <td>Nguyễn Trần Xuân Đào</td>
-                <td>create login fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">4</td>
+              <td class="text-center">22130209</td>
+              <td>Nguyễn Trần Xuân Đào</td>
+              <td>create login fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">5</td>
-                <td class="text-center">23130323</td>
-                <td> Nguyễn Tuấn Kha</td>
-                <td>Create forgot pass fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">5</td>
+              <td class="text-center">23130323</td>
+              <td> Nguyễn Tuấn Kha</td>
+              <td>Create forgot pass fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td class="text-center">Hoàn thành</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="tab-pane container active" id="week2" style="display: none">
-        <div class="table-responsive">
-          <h1 class="title text-center">Week 2 work</h1>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr class="text-center">
-                <th scope="col" style="width: 5%">STT</th>
-                <th scope="col" style="width: 11%">Id</th>
-                <th scope="col" style="width: 15%">Name</th>
-                <th scope="col" style="width: 25%">Assigned work</th>
-                <th scope="col" style="width: 17%">Progress</th>
-                <th scope="col" style="width: 19%">Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row" style="text-align: center">1</td>
-                <td class="text-center">22130247</td>
-                <td>Mai Vũ Thành Hiển</td>
-                <td>
-                  <p>Create group diary page</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+    </div>
+    <div class="tab-pane container active" id="week3" style="display: none;margin-bottom: 5rem;">
+      <div class="table-responsive">
+        <h1 class="title text-center">Week 3</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">STT</th>
+              <th scope="col" style="width: 11%">Id</th>
+              <th scope="col" style="width: 15%">Name</th>
+              <th scope="col" style="width: 25%">Assigned work</th>
+              <th scope="col" style="width: 17%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" style="text-align: center">1</td>
+              <td class="text-center">22130247</td>
+              <td>Mai Vũ Thành Hiển</td>
+              <td>
+                <p>Create group diary page</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <td class="text-center">Hoàn thành</td>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">2</td>
-                <td class="text-center">21129858</td>
-                <td>Nguyễn Hữu Huy</td>
-                <td>
-                  <p>Create menu project, home project</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="groupDiary.html" target="_blank">Group Diary page</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Nguyễn Hữu Huy</td>
+              <td>
+                <p>Create menu project, home project</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">3</td>
-                <td class="text-center">23130388</td>
-                <td>Nguyễn Khánh Duy</td>
-                <td>Create Register function in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="project.html" target="_blank">menu project</a><br />
+                <a href="index.html" target="_blank">Home Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">3</td>
+              <td class="text-center">23130388</td>
+              <td>Nguyễn Khánh Duy</td>
+              <td>Create Register function in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">4</td>
-                <td class="text-center">22130209</td>
-                <td>Nguyễn Trần Xuân Đào</td>
-                <td>create login fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="login.html" target="_blank">Link Sign up function</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">4</td>
+              <td class="text-center">22130209</td>
+              <td>Nguyễn Trần Xuân Đào</td>
+              <td>create login fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">5</td>
-                <td class="text-center">23130323</td>
-                <td> Nguyễn Tuấn Kha</td>
-                <td>Create forgot pass fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="login.html" target="_blank">Link login fuction</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">5</td>
+              <td class="text-center">23130323</td>
+              <td> Nguyễn Tuấn Kha</td>
+              <td>Create forgot pass fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td class="text-center">Hoàn thành</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td>
+                <a href="Forgot-Password.html" target="_blank">Link Forgot Pass fuction</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="tab-pane container active" id="week3" style="display: none">
-        <div class="table-responsive">
-          <h1 class="title text-center">Week 3</h1>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr class="text-center">
-                <th scope="col" style="width: 5%">STT</th>
-                <th scope="col" style="width: 11%">Id</th>
-                <th scope="col" style="width: 15%">Name</th>
-                <th scope="col" style="width: 25%">Assigned work</th>
-                <th scope="col" style="width: 17%">Progress</th>
-                <th scope="col" style="width: 19%">Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row" style="text-align: center">1</td>
-                <td class="text-center">22130247</td>
-                <td>Mai Vũ Thành Hiển</td>
-                <td>
-                  <p>Create group diary page</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+    </div>
+    <div class="tab-pane container active" id="week4" style="display: none;margin-bottom: 5rem;">
+      <div class="table-responsive">
+        <h1 class="title text-center">Week 4 work</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">STT</th>
+              <th scope="col" style="width: 11%">Id</th>
+              <th scope="col" style="width: 15%">Name</th>
+              <th scope="col" style="width: 25%">Assigned work</th>
+              <th scope="col" style="width: 17%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" style="text-align: center">1</td>
+              <td class="text-center">22130247</td>
+              <td>Mai Vũ Thành Hiển</td>
+              <td>
+                <p>Create group diary page</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="groupDiary.html" target="_blank">Group Diary page</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">2</td>
-                <td class="text-center">21129858</td>
-                <td>Nguyễn Hữu Huy</td>
-                <td>
-                  <p>Create menu project, home project</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="groupDiary.html" target="_blank">Group Diary page</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Nguyễn Hữu Huy</td>
+              <td>
+                <p>Create menu project, home project</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="project.html" target="_blank">menu project</a><br />
-                  <a href="index.html" target="_blank">Home Project</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">3</td>
-                <td class="text-center">23130388</td>
-                <td>Nguyễn Khánh Duy</td>
-                <td>Create Register function in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="project.html" target="_blank">menu project</a><br />
+                <a href="index.html" target="_blank">Home Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">3</td>
+              <td class="text-center">23130388</td>
+              <td>Nguyễn Khánh Duy</td>
+              <td>Create Register function in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="login.html" target="_blank">Link Sign up function</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">4</td>
-                <td class="text-center">22130209</td>
-                <td>Nguyễn Trần Xuân Đào</td>
-                <td>create login fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="login.html" target="_blank">Link Sign up function</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">4</td>
+              <td class="text-center">22130209</td>
+              <td>Nguyễn Trần Xuân Đào</td>
+              <td>create login fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="login.html" target="_blank">Link login fuction</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">5</td>
-                <td class="text-center">23130323</td>
-                <td> Nguyễn Tuấn Kha</td>
-                <td>Create forgot pass fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href=" " target="_blank">Link login fuction</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">5</td>
+              <td class="text-center">23130323</td>
+              <td> Nguyễn Tuấn Kha</td>
+              <td>Create forgot pass fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="Forgot-Password.html" target="_blank"
-                    >Link Forgot Pass fuction</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td>
+                <a href="Forgot-Password.html" target="_blank">Link Forgot Pass fuction</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="tab-pane container active" id="week4" style="display: none">
-        <div class="table-responsive">
-          <h1 class="title text-center">Week 4 work</h1>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr class="text-center">
-                <th scope="col" style="width: 5%">STT</th>
-                <th scope="col" style="width: 11%">Id</th>
-                <th scope="col" style="width: 15%">Name</th>
-                <th scope="col" style="width: 25%">Assigned work</th>
-                <th scope="col" style="width: 17%">Progress</th>
-                <th scope="col" style="width: 19%">Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row" style="text-align: center">1</td>
-                <td class="text-center">22130247</td>
-                <td>Mai Vũ Thành Hiển</td>
-                <td>
-                  <p>Create group diary page</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+    </div>
+    <div class="tab-pane container active" id="week5" style="display: none;margin-bottom: 5rem;">
+      <div class="table-responsive">
+        <h1 class="title text-center">Week 5 work</h1>
+        <table class="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr class="text-center">
+              <th scope="col" style="width: 5%">STT</th>
+              <th scope="col" style="width: 11%">Id</th>
+              <th scope="col" style="width: 15%">Name</th>
+              <th scope="col" style="width: 25%">Assigned work</th>
+              <th scope="col" style="width: 17%">Progress</th>
+              <th scope="col" style="width: 19%">Results</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row" style="text-align: center">1</td>
+              <td class="text-center">22130247</td>
+              <td>Mai Vũ Thành Hiển</td>
+              <td>
+                <p>Create group diary page</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="groupDiary.html" target="_blank">Group Diary page</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">2</td>
-                <td class="text-center">21129858</td>
-                <td>Nguyễn Hữu Huy</td>
-                <td>
-                  <p>Create menu project, home project</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="groupDiary.html" target="_blank">Group Diary page</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">2</td>
+              <td class="text-center">21129858</td>
+              <td>Nguyễn Hữu Huy</td>
+              <td>
+                <p>Create menu project, home project</p>
+              </td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="project.html" target="_blank">menu project</a><br />
-                  <a href="index.html" target="_blank">Home Project</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">3</td>
-                <td class="text-center">23130388</td>
-                <td>Nguyễn Khánh Duy</td>
-                <td>Create Register function in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="index.html" target="_blank">Menu project</a><br />
+                <a href="index.html" target="_blank">Home Project</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">3</td>
+              <td class="text-center">23130388</td>
+              <td>Nguyễn Khánh Duy</td>
+              <td>Create Register function in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="login.html" target="_blank">Link Sign up function</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">4</td>
-                <td class="text-center">22130209</td>
-                <td>Nguyễn Trần Xuân Đào</td>
-                <td>create login fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="login.html" target="_blank">Link Sign up function</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">4</td>
+              <td class="text-center">22130209</td>
+              <td>Nguyễn Trần Xuân Đào</td>
+              <td>create login fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href=" " target="_blank">Link login fuction</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">5</td>
-                <td class="text-center">23130323</td>
-                <td> Nguyễn Tuấn Kha</td>
-                <td>Create forgot pass fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
+                </div>
+              </td>
+              <td>
+                <a href="login.html" target="_blank">Link login fuction</a>
+              </td>
+            </tr>
+            <tr>
+              <td scope="row" style="text-align: center">5</td>
+              <td class="text-center">23130323</td>
+              <td> Nguyễn Tuấn Kha</td>
+              <td>Create forgot pass fuction in web project</td>
+              <td>
+                <div class="progress progress_custom">
+                  <div class="progress-bar progress-bar-custom" role="progressbar" style="width: 100%"
+                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    100%
                   </div>
-                </td>
-                <td>
-                  <a href="Forgot-Password.html" target="_blank"
-                    >Link Forgot Pass fuction</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                </div>
+              </td>
+              <td>
+                <a href="Forgot-Password.html" target="_blank">Link Forgot Pass fuction</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="tab-pane container active" id="week5" style="display: none">
-        <div class="table-responsive">
-          <h1 class="title text-center">Week 5 work</h1>
-          <table class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr class="text-center">
-                <th scope="col" style="width: 5%">STT</th>
-                <th scope="col" style="width: 11%">Id</th>
-                <th scope="col" style="width: 15%">Name</th>
-                <th scope="col" style="width: 25%">Assigned work</th>
-                <th scope="col" style="width: 17%">Progress</th>
-                <th scope="col" style="width: 19%">Results</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td scope="row" style="text-align: center">1</td>
-                <td class="text-center">22130247</td>
-                <td>Mai Vũ Thành Hiển</td>
-                <td>
-                  <p>Create group diary page</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href="groupDiary.html" target="_blank">Group Diary page</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">2</td>
-                <td class="text-center">21129858</td>
-                <td>Nguyễn Hữu Huy</td>
-                <td>
-                  <p>Create menu project, home project</p>
-                </td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href="index.html" target="_blank">Menu project</a><br />
-                  <a href="index.html" target="_blank">Home Project</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">3</td>
-                <td class="text-center">23130388</td>
-                <td>Nguyễn Khánh Duy</td>
-                <td>Create Register function in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href="login.html" target="_blank">Link Sign up function</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">4</td>
-                <td class="text-center">22130209</td>
-                <td>Nguyễn Trần Xuân Đào</td>
-                <td>create login fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href="login.html" target="_blank">Link login fuction</a>
-                </td>
-              </tr>
-              <tr>
-                <td scope="row" style="text-align: center">5</td>
-                <td class="text-center">23130323</td>
-                <td> Nguyễn Tuấn Kha</td>
-                <td>Create forgot pass fuction in web project</td>
-                <td>
-                  <div class="progress progress_custom">
-                    <div
-                      class="progress-bar progress-bar-custom"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      100%
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <a href="Forgot-Password.html" target="_blank"
-                    >Link Forgot Pass fuction</a
-                  >
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <footer style="background-color: rgba(0, 0, 0, 0.8); color: white; padding: 20px 0">
-        <div
-          style="
+    </div>
+    <footer style="background-color: rgba(0, 0, 0, 0.8); color: white; padding: 20px 0">
+      <div style="
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             text-align: left;
-          "
-        >
-          <div>
-            <h3>GROUP 3</h3>
-            <p>
-              Hồ Chí Minh Nông Lâm University<br />
-              Thủ Đức City, Hồ Chí Minh City,<br />
-              Việt Nam<br /><br />
-              Phone: +84 0123 456 789<br />
-              Email: hci2024group10@gmail.com
-            </p>
-          </div>
-          <div>
-            <h3>Useful Links</h3>
-            <ul style="list-style: none; padding: 0">
-              <li>
-                <a href="index.html" style="color: white; text-decoration: none"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a href="about.html" style="color: white; text-decoration: none"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="groupDiary.html"
-                  style="color: white; text-decoration: none"
-                  >Group Diary</a
-                >
-              </li>
-              <li>
-                <a
-                  href="project.html"
-                  style="color: white; text-decoration: none"
-                  >Project</a
-                >
-              </li>
-              <li>
-                <a href="styleGuide.html" style="color: white; text-decoration: none"
-                  >Style Guide</a
-                >
-              </li>
-              <li>
-                <a
-                  href="result.html"
-                  style="color: white; text-decoration: none"
-                  >Result</a
-                >
-              </li>
-              <li>
-                <a href="#" style="color: white; text-decoration: none"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3>Our Members</h3>
-            <ul style="list-style: none; padding: 0">
-              <li>Nguyễn Hữu Huy</li>
-              <li>Nguyễn Trần Xuân Đào</li>
-              <li>Mai Vũ Thành Hiển</li>
-              <li> Nguyễn Tuấn Kha</li>
-              <li>Nguyễn Khánh Duy</li>
-            </ul>
-          </div>
-          <div>
-            <h3>Newsletter</h3>
-            <form style="display: flex; align-items: center">
-              <input
-                type="email"
-                placeholder="Email is here"
-                style="
+          ">
+        <div>
+          <h3>GROUP 3</h3>
+          <p>
+            Hồ Chí Minh Nông Lâm University<br />
+            Thủ Đức City, Hồ Chí Minh City,<br />
+            Việt Nam<br /><br />
+            Phone: +84 0123 456 789<br />
+            Email: hci2024group10@gmail.com
+          </p>
+        </div>
+        <div>
+          <h3>Useful Links</h3>
+          <ul style="list-style: none; padding: 0">
+            <li>
+              <a href="index.html" style="color: white; text-decoration: none">Home</a>
+            </li>
+            <li>
+              <a href="about.html" style="color: white; text-decoration: none">About</a>
+            </li>
+            <li>
+              <a href="groupDiary.html" style="color: white; text-decoration: none">Group Diary</a>
+            </li>
+            <li>
+              <a href="project.html" style="color: white; text-decoration: none">Project</a>
+            </li>
+            <li>
+              <a href="styleGuide.html" style="color: white; text-decoration: none">Style Guide</a>
+            </li>
+            <li>
+              <a href="result.html" style="color: white; text-decoration: none">Result</a>
+            </li>
+            <li>
+              <a href="#" style="color: white; text-decoration: none">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Our Members</h3>
+          <ul style="list-style: none; padding: 0">
+            <li>Nguyễn Hữu Huy</li>
+            <li>Nguyễn Trần Xuân Đào</li>
+            <li>Mai Vũ Thành Hiển</li>
+            <li> Nguyễn Tuấn Kha</li>
+            <li>Nguyễn Khánh Duy</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Newsletter</h3>
+          <form style="display: flex; align-items: center">
+            <input type="email" placeholder="Email is here" style="
                   padding: 10px;
                   border: none;
                   border-radius: 5px 0 0 5px;
                   width: 200px;
-                "
-              />
-              <button
-                type="submit"
-                style="
+                " />
+            <button type="submit" style="
                   padding: 10px;
                   background-color: green;
                   color: white;
                   border: none;
                   border-radius: 0 5px 5px 0;
-                "
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+                ">
+              Submit
+            </button>
+          </form>
         </div>
-      </footer>
-    </div>
-    <script>
-      document.querySelectorAll("#weekTabs .nav-link").forEach((tab) => {
-        tab.addEventListener("click", function (event) {
-          event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.querySelectorAll("#weekTabs .nav-link").forEach((tab) => {
+      tab.addEventListener("click", function (event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
 
-          // Xóa class 'active' khỏi tất cả các tab và nội dung
-          document
-            .querySelectorAll("#weekTabs .nav-link")
-            .forEach((link) => link.classList.remove("active"));
-          document.querySelectorAll(".tab-pane").forEach((pane) => {
-            pane.classList.remove("active");
-            pane.style.display = "none";
-          });
-
-          // Thêm class 'active' vào tab và nội dung tương ứng được nhấp
-          const targetId = tab.getAttribute("href").substring(1);
-          tab.classList.add("active");
-          const targetPane = document.getElementById(targetId);
-          targetPane.classList.add("active");
-          targetPane.style.display = "block";
+        // Xóa class 'active' khỏi tất cả các tab và nội dung
+        document
+          .querySelectorAll("#weekTabs .nav-link")
+          .forEach((link) => link.classList.remove("active"));
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+          pane.classList.remove("active");
+          pane.style.display = "none";
         });
+
+        // Thêm class 'active' vào tab và nội dung tương ứng được nhấp
+        const targetId = tab.getAttribute("href").substring(1);
+        tab.classList.add("active");
+        const targetPane = document.getElementById(targetId);
+        targetPane.classList.add("active");
+        targetPane.style.display = "block";
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
