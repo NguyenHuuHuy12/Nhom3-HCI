@@ -150,3 +150,6 @@ td a:hover {
   overflow: auto;
   height: calc(100vh - 20px); /* Trừ khoảng cách cho các thành phần khác */
 }
+.member{
+  border: 1px solid #ddd;
+}
